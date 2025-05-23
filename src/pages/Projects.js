@@ -18,24 +18,24 @@ const Projects = () => {
       image: '/Images/placeholder.png',
       path: '/projects/MonitoringAndAlerting',
     },
-    {
-      title: '3rd Year Group Project',
-      description: 'Collaborative college project focused on an e-learning platform prototype.',
-      image: '/Images/placeholder.png',
-      path: '/projects/group-project',
-    },
-    {
-      title: 'Java Spring REST API',
-      description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
-      image: '/Images/placeholder.png',
-      path: '/projects/spring-api',
-    },
-    {
-      title: 'IoT Network Mapper',
-      description: 'IoT device used for discovering and mapping active devices in a LAN.',
-      image: '/Images/placeholder.png',
-      path: '/projects/network-mapper',
-    },
+    // {
+    //   title: '3rd Year Group Project',
+    //   description: 'Collaborative college project focused on an e-learning platform prototype.',
+    //   image: '/Images/placeholder.png',
+    //   path: '/projects/group-project',
+    // },
+    // {
+    //   title: 'Java Spring REST API',
+    //   description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
+    //   image: '/Images/placeholder.png',
+    //   path: '/projects/spring-api',
+    // },
+    // {
+    //   title: 'IoT Network Mapper',
+    //   description: 'IoT device used for discovering and mapping active devices in a LAN.',
+    //   image: '/Images/placeholder.png',
+    //   path: '/projects/network-mapper',
+    // },
   ];
 
   return (
