@@ -18,12 +18,12 @@ const Projects = () => {
       image: '/Images/placeholder.png',
       path: '/projects/MonitoringAndAlerting',
     },
-    // {
-    //   title: '3rd Year Group Project',
-    //   description: 'Collaborative college project focused on an e-learning platform prototype.',
-    //   image: '/Images/placeholder.png',
-    //   path: '/projects/group-project',
-    // },
+    {
+      title: '3rd Year Group Project',
+      description: 'Collaborative college project focused on an e-learning platform prototype.',
+      image: '/Images/placeholder.png',
+      path: '/projects/group-project',
+    }
     // {
     //   title: 'Java Spring REST API',
     //   description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
