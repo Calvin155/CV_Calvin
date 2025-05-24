@@ -17,6 +17,8 @@ function Footer() {
           <a href="/contact" className="btn btn-primary">Contact Me</a>
           <a href="/CV/Calvin Lynch - CV 2025.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Download My CV</a>
         </div>
+
+        <p>Last Updated: 24/05/2025 - Website Updated Regularly</p>
       </div>
     </footer>
   );
