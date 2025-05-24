@@ -8,7 +8,6 @@ nav.navbar {
   position: relative;
   z-index: 10;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow-x: hidden; /* prevent horizontal scrollbar when sliding */
 }
 
 /* Links and dropdown toggles */
@@ -92,30 +91,22 @@ nav a:hover,
     display: flex;
   }
 
-  /* Make links & dropdowns block elements for sliding */
+  /* Hide links & dropdowns by default */
   nav.navbar > a,
   nav.navbar > .dropdown {
-    display: block;
+    display: none;
     width: 100%;
-    padding: 10px 20px;
+    padding: 10px 0;
     border-top: 1px solid #eee;
-
-    /* Start off-screen left */
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    pointer-events: none; /* disable clicks when hidden */
   }
 
-  /* Show links when mobile menu is active (slide in) */
+  /* Show links when mobile menu is active */
   nav.navbar.active > a,
   nav.navbar.active > .dropdown {
-    transform: translateX(0);
-    opacity: 1;
-    pointer-events: auto; /* enable clicks */
+    display: block;
   }
 
-  /* Stack navbar vertically when active */
+  /* Stack vertically */
   nav.navbar.active {
     flex-direction: column;
     align-items: flex-start;
@@ -127,15 +118,6 @@ nav a:hover,
     box-shadow: none;
     border: none;
     padding-left: 20px;
-  }
-
-  /* Optional background overlay behind menu */
-  nav.navbar.active::before {
-    content: "";
-    position: fixed;
-    top: 0; left: 0; bottom: 0; right: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 5; /* behind menu */
   }
 }
 
