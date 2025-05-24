@@ -5,35 +5,36 @@ import '../css/About.css';
 const AboutMe = () => {
   const navigate = useNavigate();
 
+  //All images are from free sources
   const aboutCards = [
     {
       label: 'whoami',
       description: 'Learn about my background and personal story.',
-      image: '/Images/placeholder.png', // public folder image
+      image: '/Images/AboutImages/whoamiImages.jpg', 
       path: '/about/whoami',
     },
     {
       label: 'Education',
       description: 'My academic qualifications and certifications.',
-      image: '/Images/placeholder.png',
+      image: '/Images/AboutImages/EducationImage.jpg',
       path: '/about/education',
     },
     {
       label: 'Certificates & Achievements',
       description: 'Awards and recognitions I have earned.',
-      image: '/Images/placeholder.png',
+      image: '/Images/AboutImages/CertificatesAchievementsImage.jpg',
       path: '/about/certs&achievements',
     },
     {
       label: 'Technical & Personal Skills',
       description: 'My skills in technology and soft skills.',
-      image: '/Images/placeholder.png',
+      image: '/Images/AboutImages/TechSkillsImages.jpg',
       path: '/about/tech&personalskills',
     },
     {
       label: 'Work Experience',
       description: 'Professional roles and work history.',
-      image: '/Images/placeholder.png',
+      image: '/Images/AboutImages/WorkExp.jpg',
       path: '/about/workexp',
     },
   ];

@@ -10,7 +10,6 @@
   z-index: 100;
 }
 
-
 .btn {
   padding: 16px 36px;
   font-weight: 700;
@@ -54,3 +53,43 @@
   margin-top: 10px;
 }
 
+/* ===== Responsive Styles ===== */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .btn {
+    padding: 14px 28px;
+    font-size: 20px;
+  }
+
+  .contact-buttons {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 12px 0;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  .contact-buttons {
+    gap: 12px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-buttons .btn {
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+  }
+}

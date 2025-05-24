@@ -35,3 +35,56 @@
   color: #1e90ff;
   font-weight: bold;
 }
+
+/* ========================= */
+/* 🔁 Responsive Adjustments */
+/* ========================= */
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .achi-section {
+    padding: 30px 20px;
+    margin: 40px 10px;
+  }
+
+  .achi-heading {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .achi-list {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .achi-list li {
+    margin-bottom: 12px;
+    padding-left: 22px;
+  }
+}
+
+/* Mobile Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .achi-section {
+    padding: 20px 15px;
+    margin: 30px 10px;
+  }
+
+  .achi-heading {
+    font-size: 22px;
+  }
+
+  .achi-list {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .achi-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .achi-list li::before {
+    font-size: 14px;
+  }
+}

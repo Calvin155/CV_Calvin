@@ -82,3 +82,62 @@
 .details-button:hover {
   background: #0056b3;
 }
+
+/* ========================= */
+/* 🔁 Responsive Adjustments */
+/* ========================= */
+
+/* Tablets (≤ 768px) */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-card-content {
+    padding: 1rem;
+  }
+
+  .about-label {
+    font-size: 1.1rem;
+  }
+
+  .details-button {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile Phones (≤ 480px) */
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1rem 0.75rem;
+  }
+
+  .about-title {
+    font-size: 1.75rem;
+  }
+
+  .about-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .about-card-image {
+    height: 140px;
+  }
+
+  .about-card-content p {
+    font-size: 0.9rem;
+  }
+
+  .details-button {
+    width: 100%;
+    text-align: center;
+  }
+}

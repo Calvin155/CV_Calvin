@@ -1,7 +1,7 @@
 .technical-section {
   max-width: 1000px;
   margin: 60px auto;
-  padding: 40px;
+  padding: 40px 30px;
   background-color: #f9fafc;
   border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
@@ -12,6 +12,7 @@
   text-align: center;
   color: #1a1a1a;
   margin-bottom: 30px;
+  font-weight: 700;
 }
 
 .skills-grid {
@@ -24,15 +25,36 @@
   font-size: 24px;
   color: #333;
   margin-bottom: 12px;
+  font-weight: 600;
 }
 
 .skills-grid ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 22px;
   font-size: 16px;
   color: #444;
+  line-height: 1.5;
 }
 
 .skills-grid li {
   margin-bottom: 12px;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .technical-section {
+    padding: 30px 20px;
+  }
+  
+  .technical-heading {
+    font-size: 28px;
+  }
+  
+  .skills-grid h3 {
+    font-size: 20px;
+  }
+  
+  .skills-grid ul {
+    font-size: 14px;
+  }
 }

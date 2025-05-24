@@ -38,3 +38,50 @@
     color: #555;
     line-height: 1.6;
 }
+
+/* ===== Responsive Styles ===== */
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .monitoring-section {
+        padding: 30px 15px;
+        max-width: 95%;
+    }
+
+    .monitoring-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .monitoring-subtitle {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .monitoring-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .monitoring-section {
+        padding: 20px 10px;
+        max-width: 100%;
+    }
+
+    .monitoring-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .monitoring-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 6px;
+    }
+
+    .monitoring-text {
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+}

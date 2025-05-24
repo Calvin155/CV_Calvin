@@ -7,6 +7,7 @@ nav.navbar {
   background-color: #ffffff;
   position: relative;
   z-index: 10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav a,
@@ -16,7 +17,8 @@ nav a,
   font-weight: 600;
   font-size: 20px;
   cursor: pointer;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
+  user-select: none;
 }
 
 nav a:hover,
@@ -28,6 +30,7 @@ nav a:hover,
   position: relative;
 }
 
+/* Dropdown menu styles */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -37,10 +40,15 @@ nav a:hover,
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 10px 0;
-  display: flex;
+  display: none; /* Hidden by default */
   flex-direction: column;
   z-index: 1000;
   min-width: 250px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
 }
 
 .dropdown-menu a {
@@ -48,10 +56,52 @@ nav a:hover,
   text-decoration: none;
   color: #333;
   font-size: 16px;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
   background-color: #0077cc;
   color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav.navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  nav a,
+  .dropdown-toggle {
+    font-size: 18px;
+  }
+
+  .dropdown-menu {
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav.navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a,
+  .dropdown-toggle {
+    font-size: 16px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    min-width: auto;
+  }
+
+  .dropdown-menu a {
+    padding: 8px 12px;
+  }
 }
