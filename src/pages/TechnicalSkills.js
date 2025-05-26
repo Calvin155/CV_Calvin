@@ -16,7 +16,10 @@ const TechnicalandPersonalSkills = () => {
             <li><strong>Cloud:</strong> AWS</li>
             <li><strong>IDEs:</strong> Visual Studio Code, VS Code, NetBeans, IntelliJ</li>
             <li><strong>Frameworks:</strong> Spring Boot, React, FastAPI, Flask</li>
-            <li><strong>Other:</strong> MS Office (Word, Excel, Access, PowerPoint), Email, Internet, Jira, Miro, Linux CLI, WSL, Ubuntu, SDLC, MVC, Problem Solving, Agile, SAFe, Algorithms, SSH, REST API Design & Development</li>
+            <li><strong>Project Management:</strong> Jira & Miro</li>
+            <li><strong>Linux:</strong> Linux CLI, WSL & Ubuntu</li>
+            <li><strong>Design & Methodologies:</strong> SDLC, MVC, Dev-Ops, Agile, Safe, REST API Design & Development</li>
+            <li><strong>Other:</strong> MS Office (Word, Excel, Access, PowerPoint), Email, Internet, Problem Solving, Computer Science, IT, Networking, Algorithms, SSH</li>
           </ul>
         </div>
 
