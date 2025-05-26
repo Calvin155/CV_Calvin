@@ -12,10 +12,10 @@ function Footer() {
             </a>
             </p>
         <p>Email: <a href="mailto:calvinlynch181@outlook.com">calvinlynch181@outlook.com</a></p>
+        <p>Check Out My GitHub: <a href="https://github.com/Calvin155" className="btn btn-primary"></a></p>
 
         <div className="contact-buttons">
           <a href="/contact" className="btn btn-primary">Contact Me</a>
-          <a href="https://github.com/Calvin155" className="btn btn-primary">Check Out My GitHub</a>
           <a href="Images/CV/Calvin Lynch - CV 2025.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Download My CV</a>
         </div>
 
