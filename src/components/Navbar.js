@@ -11,34 +11,28 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${mobileMenuOpen ? 'active' : ''}`}>
-      <div
-        className="hamburger"
-        onClick={toggleMobileMenu}
-        aria-label="Toggle menu"
-        role="button"
-        tabIndex={0}
-        onKeyPress={toggleMobileMenu}
-      >
-        <span></span>
-        <span></span>
-        <span></span>
+      <div className="navbar-inner">
+        {/* Hamburger stays outside nav-links */}
+        <div
+          className="hamburger"
+          onClick={toggleMobileMenu}
+          aria-label="Toggle menu"
+          role="button"
+          tabIndex={0}
+          onKeyPress={toggleMobileMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div className="nav-links">
+          <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
+          <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Me</Link>
+          <Link to="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+          <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+        </div>
       </div>
-
-      <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-        Home
-      </Link>
-
-      <Link to="/about" onClick={() => setMobileMenuOpen(false)}>
-        About Me
-      </Link>
-
-      <Link to="/projects" onClick={() => setMobileMenuOpen(false)}>
-        Projects
-      </Link>
-
-      <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>
-        Contact
-      </Link>
     </nav>
   );
 }

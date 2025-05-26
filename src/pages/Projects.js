@@ -36,6 +36,13 @@ const Projects = () => {
     //   image: '/Images/placeholder.png',
     //   path: '/projects/network-mapper',
     // },
+
+    // {
+    //   title: 'CV - Website',
+    //   description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application.',
+    //   image: '/Images/placeholder.png',
+    //   path: '/projects/my-cv',
+    // },
   ];
 
   return (
