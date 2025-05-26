@@ -15,6 +15,7 @@ function Footer() {
 
         <div className="contact-buttons">
           <a href="/contact" className="btn btn-primary">Contact Me</a>
+          <a href="https://github.com/Calvin155" className="btn btn-primary">Check Out My GitHub</a>
           <a href="Images/CV/Calvin Lynch - CV 2025.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Download My CV</a>
         </div>
 
