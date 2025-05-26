@@ -5,7 +5,7 @@ function Home() {
   return (
     <section className="home-container">
       <div className="intro">
-        <img src="/Photos/Calvin_Profile_Photo.JPG" alt="Calvin Lynch" className="profile-photo" />
+        <img src="/Images/Calvin_Profile_Photo.JPG" alt="Calvin Lynch" className="profile-photo" />
         <h1 className="name-heading">Calvin Lynch</h1>
         <p className="title">Software Developer | Engineer | Problem Solver </p>
         <p className="summary">

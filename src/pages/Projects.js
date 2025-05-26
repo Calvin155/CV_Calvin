@@ -9,27 +9,27 @@ const Projects = () => {
     {
       title: 'Air Quality Monitoring with Raspberry Pi',
       description: 'Portable air quality monitor using a Pi, sensors, FastAPI, and InfluxDB.',
-      image: '/Images/placeholder.png',
+      image: '/Images/AirQualityMonitoring/Raspberry Pi Image.png',
       path: '/projects/air-quality-monitor',
     },
     {
       title: 'Monitoring & Alerting with Prometheus',
-      description: 'Node Exporter + Grafana dashboard to track system performance.',
-      image: '/Images/placeholder.png',
+      description: 'Node Exporter + Grafana dashboard to track system performance using Docker.',
+      image: '/Images/MonitoringAndAlertingImages/Prometheus Image.png',
       path: '/projects/MonitoringAndAlerting',
     },
     {
       title: '3rd Year Group Project',
       description: 'Collaborative college project focused on an e-learning platform prototype.',
-      image: '/Images/placeholder.png',
+      image: '/Images/GroupProj/GroupProj.jpg',
       path: '/projects/group-project',
+    },
+    {
+      title: 'Java Spring REST API',
+      description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
+      image: '/Images/SpringProject/SpringBoot Image.png',
+      path: '/projects/spring-api',
     }
-    // {
-    //   title: 'Java Spring REST API',
-    //   description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
-    //   image: '/Images/placeholder.png',
-    //   path: '/projects/spring-api',
-    // },
     // {
     //   title: 'IoT Network Mapper',
     //   description: 'IoT device used for discovering and mapping active devices in a LAN.',

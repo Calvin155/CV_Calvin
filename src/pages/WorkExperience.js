@@ -28,6 +28,7 @@ const WorkExperience = () => {
           <li>Actively contributed to HOD (Head of Department) meetings, offering insights to improve operational workflows.</li>
           <li>Responsible for onboarding and training new team members, mentoring junior staff and ensuring high service standards.</li>
           <li>Managed group and individual reservations across leisure, corporate, and event categories, maintaining booking accuracy and customer satisfaction.</li>
+          <li>Cross Checking Commisions against 3rd Party booking engines</li>
           <li>Carried out Duty Manager responsibilities including supervision of bar, restaurant, meetings, and events (C&B).</li>
         </ul>
       </div>
@@ -38,6 +39,10 @@ const WorkExperience = () => {
         <ul>
           <li>Oversaw night-time operations of the hotel, ensuring safety, guest support, and operational continuity.</li>
           <li>Managed front desk tasks, handled escalated guest concerns, and coordinated with security and housekeeping teams.</li>
+          <li>Cash/Debit/Credit Card Handling, Counting of the Safe, Staff Training.</li>
+          <li>Meeting & Events - Room Set-up</li>
+          <li>Bar Responsibilities</li>
+          <li>Running of Night Audit/End of Day & Night Reports</li>
         </ul>
       </div>
 
@@ -47,6 +52,17 @@ const WorkExperience = () => {
         <ul>
           <li>Provided front desk services, processed guest check-ins and check-outs, and maintained reservation logs.</li>
           <li>Built foundational skills in hospitality, multitasking, and customer interaction.</li>
+          <li>Cash/Debit/Credit Card Handling</li>
+        </ul>
+      </div>
+
+      <div className="job-entry">
+        <h3>Receptionist (Part-Time)</h3>
+        <p><strong>Radisson Blu Hotel & Spa, Limerick</strong> — February 2017 – September 2017</p>
+        <ul>
+          <li>Provided front desk services, processed guest check-ins and check-outs, and maintained reservation logs.</li>
+          <li>Built foundational skills in hospitality, multitasking, and customer interaction.</li>
+          <li>Cash/Debit/Credit Card Handling</li>
         </ul>
       </div>
     </section>
