@@ -1,25 +1,38 @@
 import React from 'react';
+import { Mail, Linkedin, Github, FileText, Send } from 'lucide-react';
 import '../css/Footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>Calvin Lynch - Software Developer</p>
-        <p>
-            LinkedIn: <a href="https://www.linkedin.com/in/calvin-lynch-9620b4321" target="_blank" rel="noopener noreferrer">
-                www.linkedin.com/in/calvin-lynch-9620b4321
-            </a>
-            </p>
-        <p>Email: <a href="mailto:calvinlynch181@outlook.com">calvinlynch181@outlook.com</a></p>
-        <p>Check Out My GitHub: <a href="https://github.com/Calvin155" className="btn btn-primary"></a></p>
+        <p>Calvin Lynch – Software Developer</p>
 
-        <div className="contact-buttons">
-          <a href="/contact" className="btn btn-primary">Contact Me</a>
-          <a href="Images/CV/Calvin Lynch - CV 2025.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">Download My CV</a>
+        <div className="footer-links">
+          <a href="https://www.linkedin.com/in/calvin-lynch-9620b4321" target="_blank" rel="noopener noreferrer" className="btn">
+            <Linkedin size={18} /> LinkedIn
+          </a>
+
+          <a href="mailto:calvinlynch181@outlook.com" className="btn">
+            <Mail size={18} /> Email Me
+          </a>
+
+          <a href="https://github.com/Calvin155" target="_blank" rel="noopener noreferrer" className="btn">
+            <Github size={18} /> GitHub
+          </a>
         </div>
 
-        <p>Last Updated: 26/05/2025 - Website Updated Regularly</p>
+        <div className="contact-buttons">
+          <a href="/contact" className="btn">
+            <Send size={18} /> Contact Me
+          </a>
+
+          <a href="Images/CV/Calvin Lynch - CV 2025.pdf" className="btn" target="_blank" rel="noopener noreferrer">
+            <FileText size={18} /> Download CV
+          </a>
+        </div>
+
+        <p className="updated-note">Last Updated: 26/05/2025 – Website Updated Regularly</p>
       </div>
     </footer>
   );
