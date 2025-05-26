@@ -15,7 +15,7 @@ const AboutMe = () => {
     },
     {
       label: 'Education',
-      description: 'My academic qualifications and certifications.',
+      description: 'Academic qualifications.',
       image: '/Images/AboutImages/EducationImage.jpg',
       path: '/about/education',
     },
