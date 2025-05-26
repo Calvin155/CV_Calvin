@@ -7,7 +7,7 @@ function Home() {
       <div className="intro">
         <img src="/Images/Calvin_Profile_Photo.JPG" alt="Calvin Lynch" className="profile-photo" />
         <h1 className="name-heading">Calvin Lynch</h1>
-        <p className="title">Software Developer | Engineer | Problem Solver </p>
+        <p className="title">Software Developer | Engineer |</p>
         <p className="summary">
           Welcome to my personal website! 
         <br />
