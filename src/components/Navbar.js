@@ -12,6 +12,13 @@ function Navbar() {
   return (
     <nav className={`navbar ${mobileMenuOpen ? 'active' : ''}`}>
       <div className="navbar-inner">
+        <img
+          src="SS - Company Image.png"
+          alt="Logo"
+          className="navbar-logo"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+
         {/* Hamburger stays outside nav-links */}
         <div
           className="hamburger"
