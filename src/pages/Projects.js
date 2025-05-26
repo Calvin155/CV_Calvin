@@ -10,37 +10,37 @@ const Projects = () => {
       title: 'Air Quality Monitoring with Raspberry Pi',
       description: 'Portable air quality monitor using a Pi, sensors, FastAPI, and InfluxDB.',
       image: '/Images/AirQualityMonitoring/Raspberry Pi Image.png',
-      path: '/projects/air-quality-monitor',
+      path: '/PageUnderConstruction',
     },
     {
       title: 'Monitoring & Alerting with Prometheus',
       description: 'Node Exporter + Grafana dashboard to track system performance using Docker.',
       image: '/Images/MonitoringAndAlertingImages/Prometheus Image.png',
-      path: '/projects/MonitoringAndAlerting',
+      path: '/PageUnderConstruction',
     },
     {
       title: '3rd Year Group Project',
       description: 'Collaborative college project focused on an e-learning platform prototype.',
       image: '/Images/GroupProj/GroupProj.jpg',
-      path: '/projects/group-project',
+      path: '/PageUnderConstruction',
     },
     {
       title: 'Java Spring REST API',
       description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
       image: '/Images/SpringProject/SpringBoot Image.png',
-      path: '/projects/spring-api',
+      path: '/PageUnderConstruction',
     },
     {
       title: 'IoT Network Mapper',
       description: 'IoT device used for discovering and mapping active devices in a LAN.',
       image: '/Images/placeholder.png',
-      path: '/projects/network-mapper',
+      path: '/PageUnderConstruction',
     },
     {
       title: 'CV - Website',
       description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application.',
       image: '/Images/CV/Vercel Project Deployment.png',
-      path: '/projects/my-cv',
+      path: '/PageUnderConstruction',
     }
   ];
 
