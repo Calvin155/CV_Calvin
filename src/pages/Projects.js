@@ -29,20 +29,19 @@ const Projects = () => {
       description: 'Designed and built a RESTful API using Spring Boot and tested via Postman.',
       image: '/Images/SpringProject/SpringBoot Image.png',
       path: '/projects/spring-api',
+    },
+    {
+      title: 'IoT Network Mapper',
+      description: 'IoT device used for discovering and mapping active devices in a LAN.',
+      image: '/Images/placeholder.png',
+      path: '/projects/network-mapper',
+    },
+    {
+      title: 'CV - Website',
+      description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application.',
+      image: '/Images/CV/Vercel Project Deployment.png',
+      path: '/projects/my-cv',
     }
-    // {
-    //   title: 'IoT Network Mapper',
-    //   description: 'IoT device used for discovering and mapping active devices in a LAN.',
-    //   image: '/Images/placeholder.png',
-    //   path: '/projects/network-mapper',
-    // },
-
-    // {
-    //   title: 'CV - Website',
-    //   description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application.',
-    //   image: '/Images/placeholder.png',
-    //   path: '/projects/my-cv',
-    // },
   ];
 
   return (
