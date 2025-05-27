@@ -26,6 +26,11 @@ const Website = () => {
                     <img src="/Images/CV/navbar_js.png" alt="NavBar Source Code" />
                     <p className="caption">Editing the NavBar component in VS Code</p>
                 </div>
+
+                <div className="screenshot">
+                    <img src="/Images/CV/cv Github.png" alt="GitHub Repo Source" />
+                    <p className="caption">GitHub Repository</p>
+                </div>
             </section>
 
             <section>
