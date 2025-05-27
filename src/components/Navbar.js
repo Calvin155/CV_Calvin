@@ -14,14 +14,12 @@ function Navbar() {
       <div className="navbar-inner">
       <Link to="/" onClick={() => setMobileMenuOpen(false)}>
         <img
-          src="SS - Company Image.png"
+          src="/Images/SS - Company Image.png"
           alt="Logo"
           className="navbar-logo"
         />
       </Link>
 
-
-        {/* Hamburger stays outside nav-links */}
         <div
           className="hamburger"
           onClick={toggleMobileMenu}

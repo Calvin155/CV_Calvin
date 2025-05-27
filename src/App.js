@@ -12,6 +12,7 @@ import WorkExperience from './pages/WorkExperience';
 import ContactForm from './pages/Contact';
 import MonitoringAndAlerting from './pages/MonitoringAndAlerting';
 import UnderConstruction from './pages/UnderConstruction';
+import Website from './pages/Website';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="/about/workexp" element={<WorkExperience />} />
             <Route path="/projects/MonitoringAndAlerting" element={<MonitoringAndAlerting />} />
             <Route path="/PageUnderConstruction" element={<UnderConstruction />} />
+            <Route path="/projects/website" element={<Website />} />
           </Routes>
         </main>
 

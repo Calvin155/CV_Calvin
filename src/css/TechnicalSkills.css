@@ -40,7 +40,6 @@
   margin-bottom: 12px;
 }
 
-/* Responsive for smaller screens */
 @media (max-width: 600px) {
   .technical-section {
     padding: 30px 20px;

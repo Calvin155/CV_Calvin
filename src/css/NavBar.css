@@ -16,7 +16,6 @@ nav.navbar {
   width: 100%;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -38,7 +37,6 @@ nav.navbar {
   border-radius: 2px;
 }
 
-/* Nav links */
 .nav-links {
   display: flex;
   gap: 40px;
@@ -58,7 +56,6 @@ nav.navbar {
   color: #0077cc;
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
   .navbar-inner {
     flex-direction: row;

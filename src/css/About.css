@@ -83,11 +83,6 @@
   background: #0056b3;
 }
 
-/* ========================= */
-/* 🔁 Responsive Adjustments */
-/* ========================= */
-
-/* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .about-container {
     padding: 1.5rem 1rem;
@@ -114,7 +109,6 @@
   }
 }
 
-/* Mobile Phones (≤ 480px) */
 @media (max-width: 480px) {
   .about-container {
     padding: 1rem 0.75rem;

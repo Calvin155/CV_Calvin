@@ -43,9 +43,6 @@
   color: #444444;
 }
 
-/* ===== Responsive Styles ===== */
-
-/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .home-container {
     padding: 30px 15px;
@@ -71,7 +68,6 @@
   }
 }
 
-/* Mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .home-container {
     flex-direction: column;

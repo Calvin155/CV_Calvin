@@ -93,7 +93,6 @@
   box-shadow: 0 5px 12px rgba(0, 86, 179, 0.6);
 }
 
-/* Responsive tweaks */
 @media (max-width: 600px) {
   .project-image {
     height: 140px;

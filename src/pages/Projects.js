@@ -16,7 +16,7 @@ const Projects = () => {
       title: 'Monitoring & Alerting with Prometheus',
       description: 'Node Exporter + Grafana dashboard to track system performance using Docker.',
       image: '/Images/MonitoringAndAlertingImages/Prometheus Image.png',
-      path: '/PageUnderConstruction',
+      path: '/projects/MonitoringAndAlerting',
     },
     {
       title: '3rd Year Group Project',
@@ -40,7 +40,7 @@ const Projects = () => {
       title: 'CV - Website',
       description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application.',
       image: '/Images/CV/Vercel Project Deployment.png',
-      path: '/PageUnderConstruction',
+      path: '/projects/website',
     }
   ];
 

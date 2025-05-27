@@ -36,11 +36,6 @@
   font-weight: bold;
 }
 
-/* ========================= */
-/* 🔁 Responsive Adjustments */
-/* ========================= */
-
-/* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .achi-section {
     padding: 30px 20px;
@@ -63,7 +58,6 @@
   }
 }
 
-/* Mobile Phones (≤ 480px) */
 @media (max-width: 480px) {
   .achi-section {
     padding: 20px 15px;

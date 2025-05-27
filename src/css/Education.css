@@ -112,9 +112,6 @@
   margin-bottom: 0.75rem;
 }
 
-/* ====== Responsive Styles ====== */
-
-/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .about-heading,
   .education-heading {
@@ -147,7 +144,6 @@
   }
 }
 
-/* Mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
   .about-section,
   .education-section {

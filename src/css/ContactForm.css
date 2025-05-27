@@ -54,7 +54,6 @@
 }
 
 
-/* Tablets (≤ 768px) */
 @media (max-width: 768px) {
   .contact-page {
     padding: 1.5rem;

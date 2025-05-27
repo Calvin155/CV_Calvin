@@ -1,47 +1,72 @@
+
 .monitoring-section {
     padding: 40px 20px;
     background-color: #f9f9f9;
     border-radius: 12px;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
+
 .monitoring-title {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: bold;
     color: #1a3e72;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .monitoring-container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .monitoring-card {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    text-align: center;
 }
+
 
 .monitoring-subtitle {
-    font-size: 1.5rem;
-    color: #2a2a2a;
-    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #1e1e1e;
+    margin-bottom: 15px;
 }
-
 .monitoring-text {
     font-size: 1rem;
-    color: #555;
+    color: #444;
     line-height: 1.6;
+    margin-top: 15px;
 }
 
-/* ===== Responsive Styles ===== */
+.monitoring-image {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    display: block;
+}
 
-/* Tablets (max-width: 768px) */
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.image-row .monitoring-image {
+    max-width: 48%;
+    flex: 1 1 45%;
+}
+
 @media (max-width: 768px) {
     .monitoring-section {
         padding: 30px 15px;
@@ -49,39 +74,41 @@
     }
 
     .monitoring-title {
-        font-size: 2rem;
-        margin-bottom: 20px;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
     }
 
     .monitoring-subtitle {
-        font-size: 1.3rem;
-        margin-bottom: 8px;
+        font-size: 1.4rem;
     }
 
     .monitoring-text {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
+    }
+
+    .image-row .monitoring-image {
+        max-width: 100%;
     }
 }
 
-/* Mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
     .monitoring-section {
         padding: 20px 10px;
-        max-width: 100%;
     }
 
     .monitoring-title {
         font-size: 1.8rem;
-        margin-bottom: 15px;
     }
 
     .monitoring-subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 6px;
+        font-size: 1.2rem;
     }
 
     .monitoring-text {
         font-size: 0.85rem;
-        line-height: 1.4;
+    }
+
+    .monitoring-image {
+        max-width: 100%;
     }
 }
