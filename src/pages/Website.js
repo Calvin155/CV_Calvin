@@ -62,8 +62,8 @@ const Website = () => {
                 </div>
 
                 <div className="screenshot">
-                    <img src="/Images/CV/deployments.png" alt="Deployments" />
-                    <p className="caption">Deployments List</p>
+                    <img src="/Images/CV/Building new update.png" alt="Deployments" />
+                    <p className="caption">New release being built and deployed</p>
                 </div>
             </section>
 
