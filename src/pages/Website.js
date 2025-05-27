@@ -66,6 +66,12 @@ const Website = () => {
                     <p className="caption">Vercel build triggered by GitHub push</p>
                 </div>
 
+                
+                <div className="screenshot">
+                    <img src="/Images/CV/build logs.png" alt="Build Logs" />
+                    <p className="caption">New release being built - Logs Displayed</p>
+                </div>
+
                 <div className="screenshot">
                     <img src="/Images/CV/Building new update.png" alt="Deployments" />
                     <p className="caption">New release being built and deployed</p>
