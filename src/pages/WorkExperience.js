@@ -15,7 +15,7 @@ const WorkExperience = () => {
           <li>Designed and developed a cloud cost analysis dashboard leveraging data from Azure CLI, Cassandra, and Prometheus, visualized using Grafana for internal use.</li>
           <li>Implemented observability practices using MELT (Metrics, Events, Logs, Traces) with Prometheus for metric scraping and proactive alerting.</li>
           <li>Deployed a Jaeger instance for distributed tracing and service dependency analysis.</li>
-          <li>Worked with modern tools and technologies including Python, Docker, Kubernetes (K3s), FastAPI, Flask, GitHub, GitHub Actions, InfluxDB, Grafana, and Argo CD.</li>
+          <li>Worked with modern tools and technologies including Microsoft Azure, Azure cli, Python, Docker, Kubernetes, FastAPI, Flask, GitHub, GitHub Actions, InfluxDB, Grafana, and Argo CD.</li>
           <li>Presented progress during sprint reviews and contributed actively to PI planning, sprint retrospectives, and team knowledge-sharing sessions.</li>
         </ul>
       </div>
