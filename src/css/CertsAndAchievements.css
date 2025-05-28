@@ -1,84 +1,176 @@
 .achi-section {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 60px auto;
   padding: 40px;
-  background-color: #f7f9fc;
+  background-color: #f9fbfd;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .achi-heading {
-  font-size: 32px;
+  font-size: 2.5rem;
   text-align: center;
-  color: #222;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
 }
 
-.achi-list {
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.8;
-  color: #333;
+.achi-category {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem;
+  color: #444;
+  border-left: 4px solid #1e90ff;
+  padding-left: 0.6rem;
 }
 
-.achi-list li {
-  margin-bottom: 15px;
-  padding-left: 25px;
-  position: relative;
-}
-
-.achi-list li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
+.achi-category-icon {
+  margin-right: 0.5rem;
   color: #1e90ff;
-  font-weight: bold;
 }
 
-@media (max-width: 768px) {
+.achi-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 1.5rem;
+}
+
+.achi-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 5px solid #ddd;
+}
+
+.achi-card:hover {
+  transform: translateY(-5px);
+  border-left-color: #1e90ff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.achi-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.achi-card-sub,
+.achi-card-year {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Link Container for Certs */
+.achi-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Buttons for "View Modules" and "View Certificate" */
+.achi-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.achi-link-btn:hover {
+  background-color: #006ad1;
+  transform: translateY(-2px);
+}
+
+/* Optional: make the anchor cards look clickable if used */
+.achi-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablets (768px - 1023px) */
+@media (max-width: 1023px) {
   .achi-section {
     padding: 30px 20px;
-    margin: 40px 10px;
   }
 
   .achi-heading {
-    font-size: 26px;
-    margin-bottom: 25px;
+    font-size: 2.2rem;
   }
 
-  .achi-list {
-    font-size: 16px;
-    line-height: 1.7;
+  .achi-category {
+    font-size: 1.6rem;
   }
 
-  .achi-list li {
-    margin-bottom: 12px;
-    padding-left: 22px;
+  .achi-cards {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .achi-card-title {
+    font-size: 1.1rem;
+  }
+
+  .achi-card-sub,
+  .achi-card-year {
+    font-size: 0.9rem;
+  }
+
+  .achi-link-btn {
+    font-size: 13px;
+    padding: 5px 10px;
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
   .achi-section {
-    padding: 20px 15px;
-    margin: 30px 10px;
+    margin: 40px 15px;
+    padding: 25px 15px;
   }
 
   .achi-heading {
-    font-size: 22px;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
   }
 
-  .achi-list {
-    font-size: 15px;
-    line-height: 1.6;
+  .achi-category {
+    font-size: 1.4rem;
   }
 
-  .achi-list li {
-    margin-bottom: 10px;
-    padding-left: 20px;
+  .achi-cards {
+    grid-template-columns: 1fr; /* single column on small screens */
+    gap: 1rem;
   }
 
-  .achi-list li::before {
-    font-size: 14px;
+  .achi-card {
+    padding: 1rem;
+  }
+
+  .achi-card-title {
+    font-size: 1.1rem;
+  }
+
+  .achi-card-sub,
+  .achi-card-year {
+    font-size: 0.85rem;
+  }
+
+  .achi-links {
+    justify-content: flex-start;
+  }
+
+  .achi-link-btn {
+    font-size: 13px;
+    padding: 5px 10px;
   }
 }
