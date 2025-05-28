@@ -119,7 +119,7 @@ const FYP_Project = () => {
 
             <h3 className="fyp-text">Software Testing:</h3>
             <p className="fyp-text">
-                To ensure the reliability and stability of the Python backend application, I implemented unit tests using the <code>unittest</code> and <code>pytest</code> frameworks. These tests included mocking sensor connections and validating that data retrieval functions operated as expected. The first image showcases test code where sensor communication is mocked to simulate real-world scenarios without needing hardware during testing. The second image displays the successful execution of multiple unit tests, confirming core functionality is intact. The third image illustrates a live test of the particulate matter (PM) sensor, verifying hardware accuracy and responsiveness before deployment.
+                To ensure the reliability and stability of the Python backend application, I implemented unit tests using the <code>unittest</code> and <code>pytest</code> frameworks. These tests included mocking sensor connections and validating that data retrieval functions operated as expected. The images below showcase test code where sensor communication is mocked to simulate real-world scenarios without needing hardware during testing & displays the successful execution of multiple unit tests, confirming core functionality is intact.
             </p>
 
             <div className="fyp-image-row">
