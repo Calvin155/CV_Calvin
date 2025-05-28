@@ -10,7 +10,7 @@ const Projects = () => {
       title: 'Air Quality Monitoring with Raspberry Pi',
       description: 'Portable air quality monitor using a Pi, sensors, FastAPI, and InfluxDB.',
       image: '/Images/AirQualityMonitoring/Raspberry Pi Image.png',
-      path: '/PageUnderConstruction',
+      path: '/projects/fyp_project',
     },
     {
       title: 'Monitoring & Alerting with Prometheus',
