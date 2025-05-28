@@ -41,7 +41,7 @@ const AboutMe = () => {
 
   return (
     <div className="about-container">
-      <h1 className="about-title">About Me</h1>
+      <h1 className="about-title">About</h1>
       <p className="about-subtitle">Welcome! Learn more about my background, experience, and achievements below.</p>
 
       <div className="about-card-grid">

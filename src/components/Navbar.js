@@ -35,7 +35,7 @@ function Navbar() {
 
         <div className="nav-links">
           <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About Me</Link>
+          <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
           <Link to="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
           <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
         </div>
