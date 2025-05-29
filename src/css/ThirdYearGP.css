@@ -1,43 +1,81 @@
 .project-container {
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #f9f9f9;
     border-radius: 1rem;
     max-width: 900px;
     margin: 2rem auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
 }
 
 .project-title {
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     text-align: center;
     color: #2d3748;
 }
 
 .project-section {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .project-section h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
     color: #2b6cb0;
 }
 
 .project-section p {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.1rem;
+    line-height: 1.7;
 }
 
 .project-section ul {
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
 }
 
 .project-section ul li {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .project-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .project-title {
+        font-size: 2rem;
+    }
+
+    .project-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-section p,
+    .project-section ul li {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .project-title {
+        font-size: 1.8rem;
+    }
+
+    .project-section h3 {
+        font-size: 1.2rem;
+    }
+
+    .project-section p,
+    .project-section ul li {
+        font-size: 0.95rem;
+    }
 }
