@@ -35,8 +35,9 @@ const Education = () => {
 
             <div className="education-year">
               <h4>4th Year <span className="gpa">GPA: 74.81%</span></h4>
-              <p><strong>Modules:</strong> Secure Public Cloud Services (69%), Reactive Systems (82%), Enterprise Application Development (72%), Management in Tech Software Engineering 1 (76%), Big Data Mining and Analysis (59%)</p>
+              <p><strong>Modules:</strong> Secure Public Cloud Services (69%), Reactive Systems (82%), Enterprise Application Development (72%), Management in Tech Software Engineering 1 (76%), Big Data Mining and Analysis (Elective) (59%)</p>
               <p>***Awaiting Second Semester Results***</p>
+              <p>Modules: 4th Year Modules – Api Design & Development, Machine Learning & Predictive Analysis, Software Management Techniques 2, Software Quality Engineering, Penetration Testing (Elective)</p>
             </div>
           </div>
 
