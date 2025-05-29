@@ -14,6 +14,7 @@ import MonitoringAndAlerting from './pages/MonitoringAndAlerting';
 import UnderConstruction from './pages/UnderConstruction';
 import Website from './pages/Website';
 import FYP_Project from './pages/FYP_Project';
+import ThirdYearGP from './pages/ThirdYearGP';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -40,6 +41,7 @@ function App() {
             <Route path="/PageUnderConstruction" element={<UnderConstruction />} />
             <Route path="/projects/website" element={<Website />} />
             <Route path="/projects/fyp_project" element={<FYP_Project />} />
+             <Route path="/projects/ThirdYearGroupProject" element={<ThirdYearGP />} />
           </Routes>
         </main>
 

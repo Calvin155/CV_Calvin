@@ -22,7 +22,7 @@ const Projects = () => {
       title: '3rd Year Group Project',
       description: 'Collaborative college project focused on an e-learning platform prototype.',
       image: '/Images/GroupProj/GroupProj.jpg',
-      path: '/PageUnderConstruction',
+      path: '/projects/ThirdYearGroupProject',
     },
     {
       title: 'Java Spring REST API',
