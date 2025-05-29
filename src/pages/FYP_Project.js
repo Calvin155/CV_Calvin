@@ -266,6 +266,26 @@ const FYP_Project = () => {
                 <li>📱 Built full-stack systems with REST APIs and modern frontends</li>
                 <li>📈 Created user-friendly data visualizations for web and mobile</li>
             </ul>
+
+            <h2 className="fyp-subheading">GitHub Links</h2>
+            <ul className="fyp-list">
+                <li>
+                    Swift Front End: <a href="https://github.com/Calvin155/AQI-Mobile-App.git" target="_blank" rel="noopener noreferrer">https://github.com/Calvin155/AQI-Mobile-App.git</a>
+                </li>
+                <li>
+                    React Front End: <a href="https://github.com/Calvin155/frontend.git" target="_blank" rel="noopener noreferrer">https://github.com/Calvin155/frontend.git</a>
+                </li>
+                <li>
+                    FastAPI / REST Server: <a href="https://github.com/Calvin155/FastAPIRaspberryPi.git" target="_blank" rel="noopener noreferrer">https://github.com/Calvin155/FastAPIRaspberryPi.git</a>
+                </li>
+                <li>
+                    Particulate Matter Sensor Application (Deployed on Raspberry Pi): <a href="https://github.com/Calvin155/AirQualityRaspBackEnd.git" target="_blank" rel="noopener noreferrer">https://github.com/Calvin155/AirQualityRaspBackEnd.git</a>
+                </li>
+                <li>
+                    CO₂ Sensor Application (Deployed on Raspberry Pi): <a href="https://github.com/Calvin155/Co2SensorApplication.git" target="_blank" rel="noopener noreferrer">https://github.com/Calvin155/Co2SensorApplication.git</a>
+                </li>
+            </ul>
+
         </section>
     );
 };

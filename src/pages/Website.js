@@ -23,12 +23,16 @@ const Website = () => {
                     This CV website is built using <strong>React</strong>, with the code version-controlled via <strong>GitHub</strong> and developed in <strong>VS Code</strong>.
                 </p>
                 <div className="screenshot">
-                    <img src="/Images/CV/navbar_js.png" alt="NavBar Source Code" />
+                    <a href="/Images/CV/navbar_js.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/navbar_js.png" alt="NavBar Source Code" />
+                    </a>
                     <p className="caption">Editing the NavBar component in VS Code</p>
                 </div>
 
                 <div className="screenshot">
-                    <img src="/Images/CV/cv Github.png" alt="GitHub Repo Source" />
+                    <a href="/Images/CV/cv Github.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/cv Github.png" alt="GitHub Repo Source" />
+                    </a>
                     <p className="caption">GitHub Repository</p>
                 </div>
             </section>
@@ -42,7 +46,9 @@ const Website = () => {
                     <li>Changes are committed and pushed once verified.</li>
                 </ul>
                 <div className="screenshot">
-                    <img src="/Images/CV/npm start.png" alt="Local Development - Start server" />
+                    <a href="/Images/CV/npm start.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/npm start.png" alt="Local Development - Start server" />
+                    </a>
                     <p className="caption">Running the local dev server with <code>npm start</code></p>
                 </div>
             </section>
@@ -61,19 +67,25 @@ const Website = () => {
                     <li>Push to <code>main</code> on GitHub.</li>
                     <li>Vercel builds and redeploys automatically if the build is successful.</li>
                 </ul>
+
                 <div className="screenshot">
-                    <img src="/Images/CV/Building an update on vercel.png" alt="New Update & Re-deployment" />
+                    <a href="/Images/CV/Building an update on vercel.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/Building an update on vercel.png" alt="New Update & Re-deployment" />
+                    </a>
                     <p className="caption">Vercel build triggered by GitHub push</p>
                 </div>
 
-                
                 <div className="screenshot">
-                    <img src="/Images/CV/build logs.png" alt="Build Logs" />
+                    <a href="/Images/CV/build logs.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/build logs.png" alt="Build Logs" />
+                    </a>
                     <p className="caption">New release being built - Logs Displayed</p>
                 </div>
 
                 <div className="screenshot">
-                    <img src="/Images/CV/Building new update.png" alt="Deployments" />
+                    <a href="/Images/CV/Building new update.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/Building new update.png" alt="Deployments" />
+                    </a>
                     <p className="caption">New release being built and deployed</p>
                 </div>
             </section>
@@ -85,7 +97,9 @@ const Website = () => {
                     <li>All updates are deployed automatically on GitHub push.</li>
                 </ul>
                 <div className="screenshot">
-                    <img src="/Images/CV/public web app deployed.png" alt="Production Web App" />
+                    <a href="/Images/CV/public web app deployed.png" target="_blank" rel="noopener noreferrer">
+                        <img src="/Images/CV/public web app deployed.png" alt="Production Web App" />
+                    </a>
                     <p className="caption">Deployed CV website live on the web</p>
                 </div>
             </section>

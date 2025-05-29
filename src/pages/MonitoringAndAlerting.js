@@ -35,16 +35,20 @@ const MonitoringAndAlerting = () => {
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Node Exporter</h3>
                     <div className="image-row">
-                        <img
-                            src="/Images/MonitoringAndAlertingImages/metrics exposed on local machine.png"
-                            alt="Node Exporter metrics on local machine"
-                            className="monitoring-image"
-                        />
-                        <img
-                            src="/Images/MonitoringAndAlertingImages/Metrics from Node Exporter - Accessible on Pi IP address.png"
-                            alt="Node Exporter metrics via Pi IP"
-                            className="monitoring-image"
-                        />
+                        <a href="/Images/MonitoringAndAlertingImages/metrics exposed on local machine.png" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="/Images/MonitoringAndAlertingImages/metrics exposed on local machine.png"
+                                alt="Node Exporter metrics on local machine"
+                                className="monitoring-image"
+                            />
+                        </a>
+                        <a href="/Images/MonitoringAndAlertingImages/Metrics from Node Exporter - Accessible on Pi IP address.png" target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="/Images/MonitoringAndAlertingImages/Metrics from Node Exporter - Accessible on Pi IP address.png"
+                                alt="Node Exporter metrics via Pi IP"
+                                className="monitoring-image"
+                            />
+                        </a>
                     </div>
                     <p className="monitoring-text">
                         I used Node Exporter to collect system metrics from my Raspberry Pi. Once running, the exporter made real-time hardware data
@@ -54,25 +58,28 @@ const MonitoringAndAlerting = () => {
 
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Prometheus</h3>
-                    <img
-                        src="/Images/MonitoringAndAlertingImages/refresh prometheus - new target successfully reading.png"
-                        alt="Prometheus UI showing new target"
-                        className="monitoring-image"
-                    />
+                    <a href="/Images/MonitoringAndAlertingImages/refresh prometheus - new target successfully reading.png" target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="/Images/MonitoringAndAlertingImages/refresh prometheus - new target successfully reading.png"
+                            alt="Prometheus UI showing new target"
+                            className="monitoring-image"
+                        />
+                    </a>
                     <p className="monitoring-text">
                         I worked with Prometheus to build a scalable monitoring system. I configured YAML files to define scrape jobs and wrote custom PromQL queries
                         to extract and analyze system-level metrics. This gave me a powerful, flexible foundation for real-time observability.
                     </p>
                 </article>
 
-
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Grafana</h3>
-                    <img
-                        src="/Images/MonitoringAndAlertingImages/Grafana Working.png"
-                        alt="Grafana dashboard"
-                        className="monitoring-image"
-                    />
+                    <a href="/Images/MonitoringAndAlertingImages/Grafana Working.png" target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="/Images/MonitoringAndAlertingImages/Grafana Working.png"
+                            alt="Grafana dashboard"
+                            className="monitoring-image"
+                        />
+                    </a>
                     <p className="monitoring-text">
                         I created Grafana dashboards to visualize and interpret metrics collected by Prometheus. I customized layouts,
                         added interactive charts, and configured alerts that notify me through email or Slack. It’s my go-to for quick
@@ -87,6 +94,21 @@ const MonitoringAndAlerting = () => {
                     and respond to issues before they impacted users. It’s been one of the most valuable DevOps experiences I’ve had so far.
                 </p>
             </div>
+
+            <h2 className="fyp-subheading">Docker Hub Links</h2>
+            <ul className="fyp-list">
+                <li>
+                    Prometheus - Run on Port 9090 : <a href="https://hub.docker.com/r/prom/prometheus" target="_blank" rel="noopener noreferrer">https://hub.docker.com/r/prom/prometheus</a>
+                </li>
+                <li>
+                    Grafana - Run on Port 3000 : <a href="https://hub.docker.com/r/grafana/grafana" target="_blank" rel="noopener noreferrer">https://hub.docker.com/r/grafana/grafana</a>
+                </li>
+                <li>
+                    Node-Exporter - Run on Port 9100 : <a href="https://hub.docker.com/r/bitnami/node-exporter" target="_blank" rel="noopener noreferrer">https://hub.docker.com/r/bitnami/node-exporter</a>
+                    <p>Or</p>
+                    Node Export Single Binary File - On the Prometheus website, locate the node exporter file - Download, Extract & Execute  - Will be exposed on port 9100 : <a href="https://prometheus.io/download/" target="_blank" rel="noopener noreferrer">https://prometheus.io/download/</a>
+                </li>
+            </ul>
         </section>
     );
 };
