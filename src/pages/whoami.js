@@ -20,6 +20,10 @@ const whoami = () => {
         <p className="about-paragraph">
           In my free time, I enjoy sports, music, and continually learning new technologies to stay sharp and creative in the ever-evolving tech world.
         </p>
+
+        <p className="about-paragraph">
+          I'm actively exploring new roles where I can grow, contribute, and tackle new challenges alongside a supportive team.
+        </p>
       </section>
     </>
     );
