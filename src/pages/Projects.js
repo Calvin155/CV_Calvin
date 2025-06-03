@@ -30,12 +30,12 @@ const Projects = () => {
       image: '/Images/SpringProject/SpringBoot Image.png',
       path: '/PageUnderConstruction',
     },
-    {
-      title: 'IoT Network Mapper',
-      description: 'IoT device used for discovering and mapping active devices in a LAN.',
-      image: '/Images/placeholder.png',
-      path: '/PageUnderConstruction',
-    },
+    // {
+    //   title: 'IoT Network Mapper',
+    //   description: 'IoT device used for discovering and mapping active devices in a LAN.',
+    //   image: '/Images/placeholder.png',
+    //   path: '/PageUnderConstruction',
+    // },
     {
       title: 'CV - Website',
       description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application.',
