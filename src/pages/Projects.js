@@ -26,7 +26,7 @@ const Projects = () => {
     },
     {
       title: 'Java Spring REST API',
-      description: 'Designed and built a RESTful API using Spring Boot and tested via Postman. 4th Year Individual College Project',
+      description: 'Designed and developed RESTful APIs for a Task Management System using Spring Boot and Java. Integrated Google Authentication and JWT-based security. Configured GitHub Actions for automated testing, with endpoints validated using Postman.',
       image: '/Images/SpringProject/SpringBoot Image.png',
       path: '/PageUnderConstruction',
     },
