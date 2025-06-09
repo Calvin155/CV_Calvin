@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       title: 'Air Quality Monitoring with Raspberry Pi',
-      description: 'Portable air quality monitor using a Pi, sensors, FastAPI, and InfluxDB.',
+      description: 'Portable air quality monitor system using a Raspberry Pi 5, Enviromental Sensors, Mobile Application developed using Swift, Web Applciation using React, FastAPI (Restful-Server), InfluxDB & AWS Cloud hosting for Rest server & database.',
       image: '/Images/AirQualityMonitoring/Raspberry Pi Image.png',
       path: '/projects/fyp_project',
     },
