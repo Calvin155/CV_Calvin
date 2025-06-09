@@ -19,8 +19,8 @@ const Projects = () => {
       path: '/projects/MonitoringAndAlerting',
     },
     {
-      title: '3rd Year Group Project',
-      description: 'Collaborative college project focused on an e-learning platform prototype.',
+      title: '3rd Year Group Project - Farm Management System',
+      description: 'College group project. Practiced: Team Work & Collaboration, Followed the Agile Methodology, Singlton design pattern, C# win-forms, GitHub & Azure (Cloud Hosted SQL database)',
       image: '/Images/GroupProj/GroupProj.jpg',
       path: '/projects/ThirdYearGroupProject',
     },
