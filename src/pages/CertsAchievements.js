@@ -46,6 +46,17 @@ const achievements = [
       cert: "/Images/Certs/MS Azure describe Azure Arch & Services.pdf"
     }
   },
+
+  {
+  title: "Cloud Security Fundamentals: Apprentice - Paloalto",
+  subtitle: "Cloud Security Fundamentals: Apprentice - Certificate of Completion",
+  year: "2025",
+  category: "certification",
+  links: {
+    info: "https://www.paloaltonetworks.com/services/education",
+    cert: "/Images/Certs/Cloud Security Fundamentals - Apprentice.pdf"
+  }
+},
   {
     title: "Manual Handling Training",
     subtitle: "Absolute Hotel Limerick",
