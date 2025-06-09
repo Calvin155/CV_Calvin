@@ -52,6 +52,7 @@ const AboutMe = () => {
               <h3 className="about-label">{label}</h3>
               <p>{description}</p>
               <button className="details-button">View Details</button>
+              
             </div>
           </div>
         ))}

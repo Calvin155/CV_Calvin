@@ -19,7 +19,7 @@ const TechnicalandPersonalSkills = () => {
             <li><strong>Project Management:</strong> Jira & Miro</li>
             <li><strong>Linux:</strong> Linux CLI, WSL & Ubuntu</li>
             <li><strong>Design & Methodologies:</strong> SDLC, MVC, Dev-Ops, Agile, Safe, REST API Design & Development</li>
-            <li><strong>Other:</strong> MS Office (Word, Excel, Access, PowerPoint), Azure cli, Email, Internet, Problem Solving, Computer Science, IT, Networking, Algorithms, SSH</li>
+            <li><strong>Other:</strong> MS Office (Word, Excel, Access, PowerPoint), Azure cli, Email, Internet, Problem Solving, Computer Science, IT, Networking, Algorithms, SSH & GitHub CO-Pilot</li>
           </ul>
         </div>
 
