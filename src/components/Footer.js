@@ -27,7 +27,7 @@ function Footer() {
             <Send size={18} /> Contact Me
           </a>
 
-          <a href="Images/CV/Calvin Lynch - CV 2025.pdf" className="btn" target="_blank" rel="noopener noreferrer">
+          <a href="Images/CV/Calvin Lynch CV.pdf" className="btn" target="_blank" rel="noopener noreferrer">
             <FileText size={18} /> Download CV
           </a>
         </div>
