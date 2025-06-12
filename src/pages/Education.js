@@ -35,8 +35,13 @@ const Education = () => {
             </div>
 
             <div className="education-year">
-              <h4>4th Year <span className="gpa">GPA: 73.66%</span></h4>
+              <h4>4th Year <span className="gpa">GPA: 71.75%</span></h4>
               <p><strong>Modules:</strong> Secure Public Cloud Services (69%), Reactive Systems (82%), Enterprise Application Development (72%), Management in Tech Software Engineering 1 (76%), Big Data Mining and Analysis (Elective) (59%), Api Design & Development (68%), Machine Learning & Predictive Analysis (58%), Software Management Techniques 2, Software Quality Engineering (70%), Management Software Engineering 2 (73%), Penetration Testing (78%)(Elective), Final Year Project (78%)</p>
+            </div>
+
+            <div className="education-year">
+              <h4>Final Award<span className="gpa">GPA: 73.66%</span></h4>
+              <p><strong>Awarded:</strong> Awarded 1:1 (First Class Honours) </p>
             </div>
           </div>
 

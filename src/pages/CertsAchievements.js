@@ -4,9 +4,9 @@ import { FaGraduationCap, FaCertificate, FaBriefcase, FaAward, FaCar, FaExternal
 
 const achievements = [
   {
-    title: "Ordinary Bachelor’s Degree in Software Development",
-    subtitle: "QQI Level 7 – Technological University of the Shannon Midlands: Midwest, Limerick (TUS)",
-    year: "2024",
+    title: "BSc (Honours) in Software Development",
+    subtitle: "Technological University of the Shannon, Midlands Midwest (TUS) – QQI Level 8 - First Class Honours (Grade: 1:1)",
+    year: "2025",
     category: "education",
   },
   {
