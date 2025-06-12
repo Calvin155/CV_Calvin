@@ -12,6 +12,9 @@ const FYP_Project = () => {
                 The system collects real-time environmental data including PM2.5, PM10, and CO₂. I focused on edge computing to process data locally,
                 containerized all applications using Docker, and developed both a Swift mobile app and a React web app for client-side data visualization.
                 These applications display real-time metrics, offer insights into air quality, and provide actionable recommendations when pollution levels exceed safe thresholds.
+
+                <br /><br />
+                <strong>Result Awarded:</strong> 78% (First Class Honours)
             </p>
 
             <h2 className="fyp-subheading">Tools & Technologies</h2>
