@@ -15,8 +15,8 @@ const Education = () => {
             </h3>
             <div className="course-info">
               <p><strong>Course:</strong> Software Development BSc (Hons – Level 8) in Computer Science</p>
-              <p><strong>Current Standing:</strong> QQI Level 8 – Honours BSc Degree</p>
-              <p><strong>Award:</strong> 1st Class Honours - Grade: 1:1</p>
+              <p><strong>Current Standing:</strong> Awarded QQI Level 8 Honours Bachelor of Science Degree</p>
+              <p><strong>Award:</strong> Bachelor of Science (Honours), First Class (Grade: 1:1)</p>
             </div>
 
             <div className="education-year">
