@@ -16,6 +16,7 @@ import Website from './pages/Website';
 import FYP_Project from './pages/FYP_Project';
 import ThirdYearGP from './pages/ThirdYearGP';
 import SpringBootApp from './pages/SpringBootApp';
+import { Analytics } from '@vercel/analytics/react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -48,6 +49,7 @@ function App() {
         </main>
 
         <Footer />
+         <Analytics />
       </div>
     </Router>
   );
