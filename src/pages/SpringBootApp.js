@@ -243,13 +243,14 @@ const SpringBootApp = () => {
 
       <section className="project-section">
         <h3>📂 Source Code</h3>
-        <p>
-          The source code for this project is available on GitHub:{" "}
-          <a href="https://github.com/Calvin155/TaskManagementSys" target="_blank" rel="noopener noreferrer">
-            https://github.com/Calvin155/TaskManagementSys
-          </a>
-        </p>
+        <ul>
+            <li>
+                    Task Management System: <a href="https://github.com/Calvin155/TaskManagementSys" target="_blank" rel="noopener noreferrer">https://github.com/Calvin155/TaskManagementSys</a>
+            </li>
+        </ul>
       </section>
+      
+      
     </div>
   );
 };
