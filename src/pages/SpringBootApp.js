@@ -16,21 +16,23 @@ const SpringBootApp = () => {
           <li>Google Authentication for secure login</li>
           <li>JWT (JSON Web Tokens) for secure API access</li>
           <li>Postman for API testing and validation</li>
+          <li>GitHub for version control</li>
           <li>GitHub Actions for CI/CD and automated testing</li>
           <li>SQL Database for data persistence</li>
           <li>JUnit and Mockito for unit testing</li>
           <li>Jacoco Code Coverage (Done using GitHub Actions)</li>
           <li>Spring Security for authentication and authorization</li>
           <li>Spring Data JPA for database interactions</li>
-          <li>GitHub for version control and team collaboration</li>
+          <li>Self Signed Certificate to Enable HTTPS (TLS)</li>
         </ul>
       </section>
 
       <section className="project-section">
         <h3>🎯 Aim of the System</h3>
         <p>
-          The goal of this project was to design and develop a comprehensive <strong>Task Management System</strong> that allows users to create, manage, and track tasks efficiently. The system aims to provide a user-friendly interface for task management while ensuring secure access through Google Authentication and JWT-based security.
-        </p> bn
+          The goal of this project was to design and develop a <strong>Task Management System</strong> that allows users to create, read, update & delete tasks efficiently. The system aims to provide secure access through Spring Security, B-Crypt Password Encryption, Google Authentication & JWT-based security.
+          The system also includes comprehensive API documentation using Swagger, ensuring that developers can easily understand and integrate with the API. The project emphasizes secure access to endpoints, automated testing & Code Coverage report generated using GitHub actions.
+        </p>
       </section>
 
       <section className="project-section">
