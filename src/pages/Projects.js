@@ -28,7 +28,7 @@ const Projects = () => {
       title: 'Java Spring REST API',
       description: 'Designed and developed RESTful APIs for a Task Management System using Spring Boot and Java. Documented APIs with Swagger, and implemented SQL database integration. Integrated Google Authentication and JWT-based security. Configured GitHub Actions for automated testing & Code Coverage, and validated endpoints using Postman.',
       image: '/Images/SpringProject/SpringBoot Image.png',
-      path: '/PageUnderConstruction',
+      path: '/projects/spring_boot_app',
     },
     {
       title: 'IoT Network Mapper',

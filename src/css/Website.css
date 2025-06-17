@@ -77,3 +77,108 @@ strong {
     display: block;
     font-style: italic;
 }
+
+.links-section {
+  background-color: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.links-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.link-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.link-list li {
+  margin-bottom: 0.5rem;
+}
+
+.link-list a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Base styles remain the same... (your original styles are untouched below) */
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .website-container {
+    padding: 2rem;
+    font-size: 1.05rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+  }
+
+  .screenshot img {
+    margin-top: 1rem;
+  }
+
+  .caption {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .website-container {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  }
+
+  .link-list a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .website-container {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  .caption {
+    font-size: 1rem;
+  }
+
+  .link-list a {
+    font-size: 0.95rem;
+  }
+}
+
+

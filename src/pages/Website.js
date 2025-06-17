@@ -114,6 +114,18 @@ const Website = () => {
                     <li><strong>Rapid Iteration:</strong> Enables efficient development, testing, and release cycles.</li>
                 </ul>
             </section>
+
+
+    <section class="links-section">
+        <h3>🔗 Project Links</h3>
+        <ul class="link-list">
+          <li>
+            <a href="https://github.com/Calvin155/CV_Calvin" target="_blank" rel="noopener noreferrer">
+              GitHub Repository: https://github.com/Calvin155/CV_Calvin
+            </a>
+          </li>
+        </ul>
+      </section>
         </div>
     );
 };
