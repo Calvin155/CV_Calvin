@@ -19,9 +19,10 @@ function Home() {
           MVC architecture, REST API design and testing, DevOps methodologies and tools like Docker & Kubernetes, CI/CD pipelines, cloud platforms (AWS and Azure), 
           database design, and modern test automation frameworks.
           <br />
-          I'm actively exploring opportunities where I can grow, contribute, and take on new challenges as part of a collaborative and innovative team.
+          {/* I'm actively exploring opportunities where I can grow, contribute, and take on new challenges as part of a collaborative and innovative team. */}
           <br />
-          Feel free to check out my projects and get in touch.
+          Feel free to check out my projects.
+          {/* and get in touch */}
         </p>
       </div>
     </section>
