@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>Calvin Lynch – Software Developer</p>
+        <p>Calvin Lynch – Graduate Software Test Engineer</p>
 
         <div className="footer-links">
           <a href="https://www.linkedin.com/in/calvin-lynch-9620b4321" target="_blank" rel="noopener noreferrer" className="btn">
@@ -32,7 +32,7 @@ function Footer() {
           </a>
         </div>
 
-        <p className="updated-note">Last Updated: 17/06/2025</p>
+        <p className="updated-note">Last Updated: 16/10/2025</p>
       </div>
     </footer>
   );
