@@ -7,14 +7,12 @@ const WorkExperience = () => {
       <h2 className="workexp-heading">Work Experience</h2>
 
     <div className="job-entry">
-      <h3>Graduate Software Test Engineer</h3>
+      <h3>Graduate Software Test Engineer (Manual)</h3>
       <p><strong>Kneat Solutions</strong> — July 2025 – Present</p>
       <ul>
-        <li>Participating in a two-iteration graduate program: 9 months of manual testing followed by 9 months of automated testing (beginning April 2026).</li>
         <li>Currently focused on manual testing — executing detailed test cases, identifying and logging bugs, and verifying fixes with strong attention to detail and accuracy.</li>
         <li>Using Microsoft Azure DevOps for task management, test case management, bug tracking, and version control through ADO Repos/Git.</li>
         <li>Building knowledge and technical understanding across various parts of the application to support comprehensive testing coverage.</li>
-        <li>Developing familiarity with automated testing frameworks, including BDD and Selenium, in preparation for the upcoming automation phase.</li>
         <li>Contributing to exploratory testing sessions, core regression events, and team activities to enhance product quality and collaboration.</li>
         <li>Completed internal training certifications, including Kneat End User training, to strengthen domain knowledge and system expertise.</li>
       </ul>
