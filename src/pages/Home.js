@@ -12,7 +12,7 @@ function Home() {
           Welcome to my personal website! 
           <br />
           I am a Graduate Software Test Engineer, having achieved a 1:1 (1st Class Honours) degree at the Technological University of the Shannon Midlands (TUS) in 2025 
-          (Graduation Ceremony in October 2025). I’m eager to advance my career in software testing and development, driven by a passion for building and ensuring high-quality, impactful software solutions.
+          (Graduation Ceremony in October 2025). I’m eager to advance my career in software development and testing, driven by a passion for building and ensuring high-quality, impactful software solutions.
           <br />
           Through college, CO-OP placements, and various experiences, I have developed a strong foundation in software development and DevOps practices, 
           along with a growing expertise in software quality assurance and automated testing. I am familiar with key concepts and practices such as the Software Development Life Cycle (SDLC), 

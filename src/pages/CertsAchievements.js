@@ -10,6 +10,26 @@ const achievements = [
     category: "education",
   },
   {
+    title: "ISTQB Certified Tester Foundation Level",
+    subtitle: "International Software Testing Qualifications Board (ISTQB)",
+    year: "2026",
+    category: "certification",
+    links: {
+      info: "https://www.istqb.org/certification-path-root/foundation-level.html",
+      cert: "/Images/Certs/ISTQB - Certified Software Tester.pdf"
+    }
+  },
+  {
+    title: "Kneat Solutions",
+    subtitle: "Kneat Academy Power User & Kneat Academy Power User Level 1",
+    year: "2025",
+    category: "certification",
+    links: {
+      cert: "/Images/Certs/Kneat Academy - End User Cert - CL.pdf",
+      cert: "/Images/Certs/Kneat Academy Power User Level 1 - CL.pdf"
+    }
+  },
+  {
     title: "QQI Level 5 – Software Development",
     subtitle: "Limerick College of Further Education (LCFE)",
     year: "2021",

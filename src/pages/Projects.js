@@ -31,8 +31,8 @@ const Projects = () => {
       path: '/projects/spring_boot_app',
     },
     {
-      title: 'IoT Network Mapper',
-      description: 'IoT device used for discovering and mapping active devices in a LAN.',
+      title: 'AI Incident Investigator',
+      description: 'Under Construction.',
       image: '/Images/placeholder.png',
       path: '/PageUnderConstruction',
     },
@@ -41,13 +41,6 @@ const Projects = () => {
       description: 'How I created this website using React on the front-end, GitHub to store source code and Vercel to build & deploy the Application. CI/CD, GitHub & React',
       image: '/Images/CV/Building new update.png',
       path: '/projects/website',
-    },
-
-    {
-      title: 'Expense Tracker Application',
-      description: 'Application to track personal expenses. Developed using a React front-end & Spring Boot back-end with RESTful APIs. Features include user authentication, expense categorization, and data visualization with charts.',
-      image: '/Images/placeholder.png',
-      path: '/PageUnderConstruction',
     }
   ];
 
