@@ -15,17 +15,25 @@ const achievements = [
     year: "2026",
     category: "certification",
     links: {
-      info: "https://www.istqb.org/certification-path-root/foundation-level.html",
+      info: "https://istqb.org/certifications/certified-tester-foundation-level-ctfl-v4-0/",
       cert: "/Images/Certs/ISTQB - Certified Software Tester.pdf"
     }
   },
   {
     title: "Kneat Solutions",
-    subtitle: "Kneat Academy Power User & Kneat Academy Power User Level 1",
+    subtitle: "Kneat Academy End User",
     year: "2025",
     category: "certification",
     links: {
       cert: "/Images/Certs/Kneat Academy - End User Cert - CL.pdf",
+    }
+  },
+    {
+    title: "Kneat Solutions",
+    subtitle: "Kneat Academy Power User Level 1",
+    year: "2025",
+    category: "certification",
+    links: {
       cert: "/Images/Certs/Kneat Academy Power User Level 1 - CL.pdf"
     }
   },
