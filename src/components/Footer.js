@@ -32,7 +32,7 @@ function Footer() {
           </a> */}
         </div>
 
-        <p className="updated-note">Last Updated: 26/02/2026</p>
+        <p className="updated-note">Updated: 26/02/2026</p>
       </div>
     </footer>
   );
