@@ -21,20 +21,20 @@ const achievements = [
   },
   {
     title: "Kneat Solutions",
-    subtitle: "Kneat Academy End User",
-    year: "2025",
-    category: "certification",
-    links: {
-      cert: "/Images/Certs/Kneat Academy - End User Cert - CL.pdf",
-    }
-  },
-    {
-    title: "Kneat Solutions",
     subtitle: "Kneat Academy Power User Level 1",
     year: "2025",
     category: "certification",
     links: {
       cert: "/Images/Certs/Kneat Academy Power User Level 1 - CL.pdf"
+    }
+  },
+  {
+    title: "Kneat Solutions",
+    subtitle: "Kneat Academy End User",
+    year: "2025",
+    category: "certification",
+    links: {
+      cert: "/Images/Certs/Kneat Academy - End User Cert - CL.pdf",
     }
   },
   {
