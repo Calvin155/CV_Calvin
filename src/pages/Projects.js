@@ -31,7 +31,7 @@ const Projects = () => {
       path: '/projects/spring_boot_app',
     },
     {
-      title: 'AI Pentester & Vulnerability Monitor',
+      title: 'AI Pentester & Vulnerability Monitoring',
       description: 'Under Construction.',
       image: '/Images/placeholder.png',
       path: '/PageUnderConstruction',
