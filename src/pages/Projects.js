@@ -39,8 +39,7 @@ const Projects = () => {
     {
       title: 'VulnMonitor — AI Pentesting Dashboard',
       description: 'Full-stack AI-assisted penetration testing dashboard. Features live scan streaming via SSE, JWT authentication, role-based access control, vulnerability tracking, network discovery (Nmap/tshark), and Docker/K3s deployment on Raspberry Pi edge devices.',
-      image: '/Images/VulnMonitor/DashboardOverview.png',
-      fallbackImage: '/Images/placeholder.png',
+      image: '/Images/AIPentester/image for pentester.jpg',
       path: '/projects/ai_pentester',
       tags: ['React', 'Express.js', 'PostgreSQL', 'FastAPI', 'Docker', 'K3s', 'SSE'],
     },

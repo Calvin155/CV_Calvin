@@ -237,8 +237,13 @@
    ================================================ */
 
 @media (max-width: 768px) {
+  .projects-container {
+    padding: 1.5rem 1.25rem 3.5rem;
+  }
+
   .projects-hero {
-    padding: 2.5rem 0 2rem;
+    padding: 2.25rem 0 1.75rem;
+    margin-bottom: 2rem;
   }
 
   .projects-title {
@@ -246,19 +251,42 @@
     letter-spacing: -1px;
   }
 
+  .projects-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.1rem;
+  }
+
   .card-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
   }
 
   .project-image-wrapper {
-    height: 165px;
+    height: 140px;
+  }
+
+  .project-info {
+    padding: 1rem 1.1rem 1.1rem;
+  }
+
+  .project-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .project-info p {
+    font-size: 0.82rem;
   }
 }
 
-@media (max-width: 480px) {
+/* ---- Compact horizontal list on small phones ---- */
+@media (max-width: 540px) {
   .projects-container {
     padding: 1.25rem 1rem 3rem;
+  }
+
+  .projects-hero {
+    padding: 2rem 0 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .projects-title {
@@ -266,11 +294,109 @@
     letter-spacing: -0.75px;
   }
 
-  .projects-subtitle {
-    font-size: 0.95rem;
+  .projects-stats {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.9rem;
   }
 
-  .projects-stats {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  /* Flip cards to horizontal layout */
+  .project-card {
+    flex-direction: row;
+    border-radius: 14px;
+  }
+
+  .project-card::before {
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+    width: 3px;
+    height: auto;
+    opacity: 1;
+    background: var(--cl-gradient-accent, linear-gradient(180deg, #0077cc, #6366f1));
+  }
+
+  .project-card:hover {
+    transform: translateY(-3px);
+  }
+
+  .project-image-wrapper {
+    width: 110px;
+    min-width: 110px;
+    height: auto;
+    border-radius: 0;
+    flex-shrink: 0;
+  }
+
+  .project-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-info {
+    padding: 0.85rem 1rem 0.9rem;
+    justify-content: space-between;
+  }
+
+  .project-info h3 {
+    font-size: 0.88rem;
+    margin-bottom: 0.3rem;
+    letter-spacing: -0.1px;
+  }
+
+  .project-info p {
+    font-size: 0.78rem;
+    line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .project-footer {
+    margin-top: 0.75rem;
+    gap: 0.6rem;
+  }
+
+  .project-tags {
+    gap: 0.3rem;
+  }
+
+  .project-tag {
+    font-size: 0.65rem;
+    padding: 0.18rem 0.45rem;
+  }
+
+  .details-button {
+    width: 100%;
+    text-align: center;
     font-size: 0.8rem;
+    padding: 0.45rem 0.75rem;
+    justify-content: center;
+  }
+
+  .project-badge {
+    top: 8px;
+    right: 8px;
+    font-size: 0.6rem;
+    padding: 0.22rem 0.5rem;
+  }
+}
+
+/* ---- Touch tap feedback ---- */
+@media (hover: none) {
+  .project-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .details-button:active {
+    background: #0077cc;
+    color: #ffffff;
   }
 }
