@@ -1,193 +1,184 @@
 .monitoring-section {
-    padding: 60px 30px;
-    background-color: #f4f7fb;
-    border-radius: 16px;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 3rem 2rem 4rem;
+  background-color: var(--cl-bg, #ffffff);
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .monitoring-title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #0b2c51;
-    text-align: center;
-    margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  background: var(--cl-gradient-title, linear-gradient(135deg, #0a0a0a, #374151));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .monitoring-subheading {
-    font-size: 2rem;
-    color: #0b2c51;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cl-text, #111827);
+  margin: 2.5rem 0 1rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--cl-primary, #0077cc);
 }
 
 .monitoring-list {
-    list-style-type: disc;
-    padding-left: 50px;
-    margin-bottom: 40px;
-    color: #333;
-    font-size: 1.1rem;
-    line-height: 1.8;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.monitoring-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: var(--cl-muted, #6b7280);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.monitoring-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--cl-primary, #0077cc);
+  font-weight: 700;
 }
 
 .getting-started {
-    margin-bottom: 50px;
+  margin-bottom: 2.5rem;
 }
 
 .monitoring-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
 .monitoring-card {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    transition: transform 0.3s ease;
+  background-color: var(--cl-bg, #ffffff);
+  padding: 1.75rem;
+  border-radius: var(--cl-radius, 16px);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  box-shadow: var(--cl-shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .monitoring-card:hover {
-    transform: translateY(-5px);
+  transform: translateY(-3px);
+  box-shadow: var(--cl-shadow-md, 0 4px 16px rgba(0,0,0,0.08));
 }
 
 .monitoring-subtitle {
-    font-size: 2rem;
-    color: #1d1d1d;
-    margin-bottom: 20px;
-    font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cl-text, #111827);
+  margin-bottom: 1rem;
 }
 
 .monitoring-text {
-    font-size: 1.05rem;
-    color: #444;
-    line-height: 1.8;
-    margin-top: 20px;
-    text-align: left;
+  font-size: 0.95rem;
+  color: var(--cl-muted, #6b7280);
+  line-height: 1.8;
+  margin-top: 0.75rem;
+  text-align: left;
 }
 
 .monitoring-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 12px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-    display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 1.25rem 0;
+  border-radius: var(--cl-radius-md, 12px);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  box-shadow: var(--cl-shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.monitoring-image:hover {
+  transform: scale(1.02);
 }
 
 .image-row {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0;
 }
 
 .image-row .monitoring-image {
-    max-width: 48%;
-    flex: 1 1 48%;
+  max-width: 48%;
+  flex: 1 1 48%;
 }
 
 .monitoring-summary {
-    margin-top: 50px;
-    padding-top: 30px;
-    border-top: 1px solid #ccc;
-    text-align: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--cl-border, #e5e7eb);
+  text-align: center;
 }
 
 .fyp-subheading {
-    font-size: 1.8rem;
-    margin-top: 50px;
-    text-align: center;
-    color: #0b2c51;
-    font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--cl-text, #111827);
+  margin-top: 3rem;
+  padding-left: 0.85rem;
+  border-left: 3px solid var(--cl-primary, #0077cc);
+  text-align: left;
 }
 
 .fyp-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-top: 20px;
-    text-align: center;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
 }
 
 .fyp-list li {
-    margin-bottom: 15px;
-    font-size: 1.05rem;
-    color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--cl-muted, #6b7280);
 }
 
 .fyp-list a {
-    color: #1a73e8;
-    text-decoration: none;
+  color: var(--cl-primary, #0077cc);
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .fyp-list a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 1024px) {
-    .monitoring-title {
-        font-size: 2.5rem;
-    }
-
-    .monitoring-subheading {
-        font-size: 1.75rem;
-    }
-
-    .monitoring-subtitle {
-        font-size: 1.6rem;
-    }
-
-    .monitoring-text {
-        font-size: 1rem;
-    }
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
-    .monitoring-section {
-        padding: 30px 15px;
-        max-width: 95%;
-    }
+  .monitoring-section {
+    padding: 2rem 1.25rem 3rem;
+  }
 
-    .monitoring-title {
-        font-size: 2.2rem;
-    }
+  .monitoring-title {
+    font-size: 2rem;
+  }
 
-    .monitoring-subheading,
-    .monitoring-subtitle {
-        font-size: 1.5rem;
-    }
+  .monitoring-subheading,
+  .monitoring-subtitle {
+    font-size: 1.1rem;
+  }
 
-    .monitoring-text {
-        font-size: 0.95rem;
-    }
-
-    .image-row .monitoring-image {
-        max-width: 100%;
-    }
+  .image-row .monitoring-image {
+    max-width: 100%;
+    flex-basis: 100%;
+  }
 }
 
 @media (max-width: 480px) {
-    .monitoring-title {
-        font-size: 1.8rem;
-    }
-
-    .monitoring-subheading,
-    .monitoring-subtitle {
-        font-size: 1.2rem;
-    }
-
-    .monitoring-text {
-        font-size: 0.85rem;
-    }
-
-    .monitoring-image {
-        max-width: 100%;
-    }
+  .monitoring-title {
+    font-size: 1.75rem;
+  }
 }

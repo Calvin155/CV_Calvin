@@ -32,7 +32,7 @@ const MonitoringAndAlerting = () => {
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Node Exporter</h3>
                     <a href="/Images/MonitoringAndAlertingImages/Metrics from Node Exporter - Accessible on Pi IP address.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/Metrics from Node Exporter - Accessible on Pi IP address.png" alt="Prometheus UI showing new target" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/Metrics from Node Exporter - Accessible on Pi IP address.png" alt="Prometheus UI showing new target" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <p className="monitoring-text">
                         Node Exporter provided critical system-level metrics directly from my Raspberry Pi. It enabled Prometheus to track hardware performance in real-time, offering deep insights into resource utilization.
@@ -42,7 +42,7 @@ const MonitoringAndAlerting = () => {
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Prometheus</h3>
                     <a href="/Images/MonitoringAndAlertingImages/refresh prometheus - new target successfully reading.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/refresh prometheus - new target successfully reading.png" alt="Prometheus UI showing new target" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/refresh prometheus - new target successfully reading.png" alt="Prometheus UI showing new target" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <p className="monitoring-text">
                         Prometheus formed the core of the monitoring stack. I created scrape jobs in YAML and wrote PromQL queries to monitor CPU, memory, disk I/O, and uptime across all devices.
@@ -52,7 +52,7 @@ const MonitoringAndAlerting = () => {
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Grafana</h3>
                     <a href="/Images/MonitoringAndAlertingImages/Grafana Working.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/Grafana Working.png" alt="Grafana dashboard" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/Grafana Working.png" alt="Grafana dashboard" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <p className="monitoring-text">
                         Grafana made data interpretation seamless. I built dynamic dashboards with customizable panels and integrated real-time alerting through Slack and email.
@@ -62,17 +62,17 @@ const MonitoringAndAlerting = () => {
                 <article className="monitoring-card">
                     <h3 className="monitoring-subtitle">Alerting</h3>
                     <a href="/Images/MonitoringAndAlertingImages/Alert_Rules Image.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/Alert_Rules Image.png" alt="Alert Rules" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/Alert_Rules Image.png" alt="Alert Rules" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <p className="monitoring-text">
                         I configured Prometheus alert rules that fired based on threshold breaches. These were forwarded to Alertmanager, which handled routing via webhook and displayed alert statuses.
                     </p>
 
                     <a href="/Images/MonitoringAndAlertingImages/Alerts Showing on Promethus.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/Alerts Showing on Promethus.png" alt="Alert in Prometheus" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/Alerts Showing on Promethus.png" alt="Alert in Prometheus" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <a href="/Images/MonitoringAndAlertingImages/Alerts showing on alert manager as OK.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/Alerts showing on alert manager as OK.png" alt="Alert in Alertmanager" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/Alerts showing on alert manager as OK.png" alt="Alert in Alertmanager" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
 
                     <p className="monitoring-text">
@@ -80,7 +80,7 @@ const MonitoringAndAlerting = () => {
                     </p>
 
                     <a href="/Images/MonitoringAndAlertingImages/alert manager down pi critical - alert webhook.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/alert manager down pi critical - alert webhook.png" alt="Pi Down Alert" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/alert manager down pi critical - alert webhook.png" alt="Pi Down Alert" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
 
                     <p className="monitoring-text">
@@ -88,10 +88,10 @@ const MonitoringAndAlerting = () => {
                     </p>
 
                     <a href="/Images/MonitoringAndAlertingImages/alert manager webhook code.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/alert manager webhook code.png" alt="Webhook Code" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/alert manager webhook code.png" alt="Webhook Code" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <a href="/Images/MonitoringAndAlertingImages/webhook alert.png" target="_blank" rel="noopener noreferrer">
-                        <img src="/Images/MonitoringAndAlertingImages/webhook alert.png" alt="Webhook Alert" className="monitoring-image" />
+                        <img src="/Images/MonitoringAndAlertingImages/webhook alert.png" alt="Webhook Alert" className="monitoring-image" loading="lazy" decoding="async" />
                     </a>
                     <p className="monitoring-text">
                         Webhooks were tested using <a href="https://webhook.site" target="_blank" rel="noopener noreferrer">webhook.site</a> to capture and visualize incoming alerts. This flexible setup can also use email or SMS for critical notifications.

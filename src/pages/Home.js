@@ -1,29 +1,54 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { Github, Linkedin } from 'lucide-react';
 import '../css/Home.css';
 
 function Home() {
   return (
     <section className="home-container">
       <div className="intro">
-        <img src="/Images/Calvin_Profile_Photo.JPG" alt="Calvin Lynch" className="profile-photo" />
+        <img
+          src="/Images/Calvin_Profile_Photo.JPG"
+          alt="Calvin Lynch"
+          className="profile-photo"
+          loading="eager"
+        />
+
         <h1 className="name-heading">Calvin Lynch</h1>
         <p className="title">Graduate Software Test Engineer</p>
+
+        <div className="home-badges">
+          <span className="home-badge">🎓 1:1 First Class Honours · TUS 2025</span>
+          <span className="home-badge">💼 Kneat Solutions</span>
+          <span className="home-badge">🛡️ ISTQB Certified</span>
+        </div>
+
         <p className="summary">
-          Welcome to my personal website! 
-          <br />
-          I am a Graduate Software Test Engineer, having achieved a 1:1 (1st Class Honours) degree at the Technological University of the Shannon Midlands (TUS) in 2025 
-          (Graduation Ceremony in October 2025). I’m eager to advance my career in software development and testing, driven by a passion for building and ensuring high-quality, impactful software solutions.
-          <br />
-          Through college, CO-OP placements, and various experiences, I have developed a strong foundation in software development and DevOps practices, 
-          along with a growing expertise in software quality assurance and automated testing. I am familiar with key concepts and practices such as the Software Development Life Cycle (SDLC), 
-          MVC architecture, REST API design and testing, DevOps methodologies and tools like Docker & Kubernetes, CI/CD pipelines, cloud platforms (AWS and Azure), 
-          database design, and modern test automation frameworks.
-          <br />
-          {/* I'm actively exploring opportunities where I can grow, contribute, and take on new challenges as part of a collaborative and innovative team. */}
-          <br />
-          Feel free to check out my projects.
-          {/* and get in touch */}
+          Welcome to my personal website. I'm a Graduate Software Test Engineer with a passion for building and testing high-quality, reliable software. I hold a First Class Honours degree in Software Development from TUS and am ISTQB Foundation Level Certified.
         </p>
+        <p className="summary">
+          Through college, a CO-OP placement at Progress Software, and my current role at Kneat Solutions, I've developed hands-on experience across software testing, DevOps, full-stack development, and cloud infrastructure — from writing test cases and CI/CD pipelines to building IoT systems and AI-assisted security tools.
+        </p>
+
+        <div className="home-actions">
+          <Link to="/projects" className="home-btn home-btn-primary">View Projects →</Link>
+          <a
+            href="https://www.linkedin.com/in/calvin-lynch-9620b4321/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-btn home-btn-outline"
+          >
+            <Linkedin size={16} /> LinkedIn
+          </a>
+          <a
+            href="https://github.com/Calvin155"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-btn home-btn-outline"
+          >
+            <Github size={16} /> GitHub
+          </a>
+        </div>
       </div>
     </section>
   );

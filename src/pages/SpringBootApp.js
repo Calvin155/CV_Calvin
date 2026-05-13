@@ -275,9 +275,9 @@ const SpringBootApp = () => {
         </p>
       </section>
 
-      <section class="links-section">
+      <section className="links-section">
         <h3>🔗 Project Links</h3>
-        <ul class="link-list">
+        <ul className="link-list">
           <li>
             <a href="https://github.com/Calvin155/TaskManagementSystem" target="_blank" rel="noopener noreferrer">
               GitHub Repository: https://github.com/Calvin155/TaskManagementSystem

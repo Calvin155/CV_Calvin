@@ -1,46 +1,63 @@
 import React from 'react';
 import '../css/TechnicalSkills.css';
 
+const skillGroups = [
+  { category: 'Languages',            skills: ['Java', 'JavaScript', 'C#', 'Python', 'PHP', 'HTML', 'CSS'] },
+  { category: 'Frameworks',           skills: ['Spring Boot', 'React', 'FastAPI', 'Flask', 'REST API Design', 'MVC Architecture'] },
+  { category: 'Software Testing',     skills: ['Manual Testing', 'Exploratory Testing', 'Regression Testing', 'PR Validation', 'Test Case Design', 'Bug Tracking & Reporting', 'Risk-Based Testing', 'Black-Box Testing', 'Functional Testing', 'Non-Functional Testing'] },
+  { category: 'Testing Tools',        skills: ['Azure DevOps', 'ADO Repos (Git)', 'Postman', 'Browser DevTools'] },
+  { category: 'DevOps & Automation',  skills: ['Docker', 'Kubernetes (K3s)', 'CI/CD Pipelines', 'GitHub Actions', 'Bash Scripting', 'Argo CD'] },
+  { category: 'Databases',            skills: ['SQL', 'PostgreSQL', 'InfluxDB', 'Cassandra'] },
+  { category: 'Cloud',                skills: ['AWS', 'Microsoft Azure'] },
+  { category: 'Monitoring',           skills: ['Prometheus', 'Grafana', 'Jaeger'] },
+  { category: 'Tools',                skills: ['Git', 'GitHub', 'Linux CLI', 'Ubuntu', 'WSL', 'IntelliJ', 'VS Code', 'Azure CLI'] },
+  { category: 'Methodologies',        skills: ['SDLC', 'Agile', 'SAFe', 'DevOps Practices'] },
+];
+
+const personalSkills = [
+  'Strong Communication', 'Cross-team Collaboration', 'Analytical Thinking',
+  'Attention to Detail', 'Problem-Solving', 'Adaptable', 'Dependable',
+];
+
+const interests = ['Sports (Hurling, Football)', 'Music', 'Continuous Learning in Technology'];
+
 const TechnicalandPersonalSkills = () => {
   return (
     <section id="technical" className="technical-section">
       <h2 className="technical-heading">Technical & Personal Skills</h2>
 
-      <div className="skills-grid">
-        <div>
-          <h3>Technical Skills</h3>
-          <ul>
-            <li><strong>Programming Languages:</strong> Java, JavaScript, C#, Python, PHP, HTML, CSS</li>
-
-            <li><strong>Frameworks & Development:</strong> Spring Boot, React, FastAPI, Flask, REST API Design & Development, MVC Architecture</li>
-
-            <li><strong>Software Testing:</strong> Manual Testing, Exploratory Testing, Regression Testing, PR Validation Testing, Test Case Design, Bug Tracking & Reporting, Risk-Based Testing, Functional & Non-Functional Testing, Black-Box Testing</li>
-
-            <li><strong>Testing Tools:</strong> Azure DevOps (Boards & Test Plans), ADO Repos (Git), Postman, Browser DevTools</li>
-
-            <li><strong>DevOps & Automation:</strong> Docker, Kubernetes (K3s), CI/CD Pipelines, GitHub Actions, Bash Scripting, DevOps Methodology, Infrastructure Awareness</li>
-
-            <li><strong>Databases:</strong> SQL, PostgreSQL, InfluxDB, Cassandra</li>
-
-            <li><strong>Cloud:</strong> AWS (Academic Projects), Microsoft Azure</li>
-
-            <li><strong>Monitoring & Observability:</strong> Prometheus, Grafana</li>
-
-            <li><strong>Tools & Environments:</strong> Git, GitHub, Linux CLI, Ubuntu, WSL, IntelliJ, NetBeans, Visual Studio Code, Azure CLI</li>
-
-            <li><strong>Methodologies:</strong> SDLC, Agile, SAFe, DevOps Practices</li>
-
-            <li><strong>Certifications:</strong> ISTQB Foundation Level Tester</li>
-          </ul>
+      <div className="skills-content">
+        <div className="skills-block">
+          <h3 className="skills-block-title">Technical Skills</h3>
+          <div className="skill-groups">
+            {skillGroups.map(({ category, skills }) => (
+              <div key={category} className="skill-group">
+                <span className="skill-category">{category}</span>
+                <div className="skill-tags">
+                  {skills.map(s => <span key={s} className="skill-tag">{s}</span>)}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div>
-          <h3>Personal Skills</h3>
-          <ul>
-            <li><strong>Professional Skills:</strong> Strong communication, cross-team collaboration, analytical thinking, attention to detail, problem-solving, dependable and adaptable</li>
-            <li><strong>Interests:</strong> Sports (hurling, football), music (listening and playing), continuous learning in technology</li>
-          </ul>
+        <div className="skills-block">
+          <h3 className="skills-block-title">Personal Skills</h3>
+          <div className="skill-tags">
+            {personalSkills.map(s => <span key={s} className="skill-tag">{s}</span>)}
+          </div>
         </div>
+
+        <div className="skills-block">
+          <h3 className="skills-block-title">Interests</h3>
+          <div className="skill-tags">
+            {interests.map(s => <span key={s} className="skill-tag skill-tag-personal">{s}</span>)}
+          </div>
+        </div>
+      </div>
+
+      <div className="certifications-note">
+        <span className="cert-badge">ISTQB Foundation Level Certified</span>
       </div>
     </section>
   );

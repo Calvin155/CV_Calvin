@@ -16,6 +16,7 @@ import SoonToBeReleased from './pages/SoonToBeRealeased';
 import Website from './pages/Website';
 import FYP_Project from './pages/FYP_Project';
 import ThirdYearGP from './pages/ThirdYearGP';
+import AIPentester from './pages/AIPentester';
 import SpringBootApp from './pages/SpringBootApp';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -47,7 +48,7 @@ function App() {
             <Route path="/projects/fyp_project" element={<FYP_Project />} />
             <Route path="/projects/ThirdYearGroupProject" element={<ThirdYearGP />} />
             <Route path="/projects/spring_boot_app" element={<SpringBootApp />} />
-            <Route path="/soon-to-be-released" element={<SoonToBeReleased />} />
+            <Route path="/projects/ai_pentester" element={<AIPentester />} />
           </Routes>
         </main>
 

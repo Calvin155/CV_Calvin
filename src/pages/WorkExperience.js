@@ -1,84 +1,97 @@
 import React from 'react';
 import '../css/WorkExperience.css';
 
+const jobs = [
+  {
+    title: 'Graduate Software Test Engineer (Manual)',
+    company: 'Kneat Solutions',
+    dates: 'July 2025 – Present',
+    bullets: [
+      'Execute detailed test cases, identify and log bugs, and verify fixes with precision to ensure high-quality software delivery.',
+      'Utilise Microsoft Azure DevOps for task management, test case tracking, bug reporting, and version control using ADO Repos (Git).',
+      'Build deep application knowledge to support comprehensive testing coverage across multiple modules.',
+      'Contribute to exploratory testing, pull request (PR) validation, and core regression cycles to enhance overall product quality.',
+      'Collaborate closely with developers and QA teams to validate fixes and ensure alignment with functional and business requirements.',
+      'Completed internal training certifications, including Kneat End User Training, and achieved Power User Level 1 certification.',
+      'Certified ISTQB Foundation Level Tester, demonstrating strong foundational expertise in software testing principles.',
+    ],
+  },
+  {
+    title: 'Software Engineer Intern',
+    company: 'Progress Software Corporation',
+    dates: 'January 2024 – August 2024 (8 Months)',
+    bullets: [
+      'Gained hands-on experience in DevOps practices, CI/CD pipelines, infrastructure automation, and Agile (SAFe) methodology as part of the Platform Operations Team.',
+      'Collaborated with engineers in team settings, participated in peer code reviews, and helped debug complex deployment issues.',
+      'Designed and developed a cloud cost analysis dashboard leveraging data from Azure CLI, Cassandra, and Prometheus, visualised using Grafana for internal use.',
+      'Implemented observability practices using MELT (Metrics, Events, Logs, Traces) with Prometheus for metric scraping and proactive alerting.',
+      'Deployed a Jaeger instance for distributed tracing and service dependency analysis.',
+      'Worked with: Microsoft Azure, Azure CLI, Python, Docker, Kubernetes, FastAPI, Flask, GitHub, GitHub Actions, InfluxDB, Grafana, and Argo CD.',
+      'Presented progress during sprint reviews and contributed to PI planning, retrospectives, and knowledge-sharing sessions.',
+    ],
+  },
+  {
+    title: 'Senior Receptionist',
+    company: 'Absolute Hotel, Limerick',
+    dates: '2019 – December 2024',
+    bullets: [
+      'Advanced user of Opera Hotel Management System and Micros POS.',
+      'Actively contributed to HOD (Head of Department) meetings, offering insights to improve operational workflows.',
+      'Responsible for onboarding and training new team members, mentoring junior staff and ensuring high service standards.',
+      'Managed group and individual reservations across leisure, corporate, and event categories.',
+      'Cross-checked commissions against third-party booking engines.',
+      'Carried out Duty Manager responsibilities including supervision of bar, restaurant, meetings, and events (C&B).',
+    ],
+  },
+  {
+    title: 'Night Duty Manager',
+    company: 'Absolute Hotel, Limerick',
+    dates: '2018 – 2019',
+    bullets: [
+      'Oversaw night-time operations, ensuring safety, guest support, and operational continuity.',
+      'Managed front desk tasks, handled escalated guest concerns, and coordinated with security and housekeeping.',
+      'Cash/debit/credit card handling, safe counting, staff training.',
+      'Room set-up for meetings and events; bar responsibilities; night audit and end-of-day reporting.',
+    ],
+  },
+  {
+    title: 'Receptionist (Part-Time)',
+    company: 'Absolute Hotel, Limerick',
+    dates: 'September 2017 – 2018',
+    bullets: [
+      'Provided front desk services, processed guest check-ins and check-outs, and maintained reservation logs.',
+      'Built foundational skills in hospitality, multitasking, and customer interaction.',
+    ],
+  },
+  {
+    title: 'Receptionist (Part-Time)',
+    company: 'Radisson Blu Hotel & Spa, Limerick',
+    dates: 'February 2017 – September 2017',
+    bullets: [
+      'Provided front desk services, processed guest check-ins and check-outs, and maintained reservation logs.',
+      'Built foundational skills in hospitality, multitasking, and customer interaction.',
+    ],
+  },
+];
+
 const WorkExperience = () => {
   return (
     <section id="WorkExp" className="workexp-section">
       <h2 className="workexp-heading">Work Experience</h2>
 
-    <div className="job-entry">
-      <h3>Graduate Software Test Engineer (Manual)</h3>
-      <p><strong>Kneat Solutions</strong> — July 2025 – Present</p>
-        <ul>
-          <li>Execute detailed test cases, identify and log bugs, and verify fixes with precision to ensure high-quality software delivery.</li>
-          <li>Utilize Microsoft Azure DevOps for task management, test case tracking, bug reporting, and version control using ADO Repos (Git).</li>
-          <li>Build deep application knowledge to support comprehensive testing coverage across multiple modules.</li>
-          <li>Contribute to exploratory testing, pull request (PR) validation, and core regression cycles to enhance overall product quality.</li>
-          <li>Collaborate closely with developers and QA teams to validate fixes and ensure alignment with functional and business requirements.</li>
-          <li>Completed internal training certifications, including Kneat End User Training, and achieved Power User Level 1 certification.</li>
-          <li>Certified ISTQB Foundation Level Tester, demonstrating strong foundational expertise in software testing principles.</li>
-        </ul>
-    </div>
-
-
-      <div className="job-entry">
-        <h3>Software Engineer Intern</h3>
-        <p><strong>Progress Software Corporation</strong> — January 2024 – August 2024 (8 Months)</p>
-        <ul>
-          <li>Gained hands-on experience in DevOps practices, CI/CD pipelines, infrastructure automation, and Agile (SAFe) methodology as part of the Platform Operations Team.</li>
-          <li>Collaborated with engineers in team settings, participated in peer code reviews, and helped debug complex deployment issues.</li>
-          <li>Designed and developed a cloud cost analysis dashboard leveraging data from Azure CLI, Cassandra, and Prometheus, visualized using Grafana for internal use.</li>
-          <li>Implemented observability practices using MELT (Metrics, Events, Logs, Traces) with Prometheus for metric scraping and proactive alerting.</li>
-          <li>Deployed a Jaeger instance for distributed tracing and service dependency analysis.</li>
-          <li>Worked with modern tools and technologies including Microsoft Azure, Azure cli, Python, Docker, Kubernetes, FastAPI, Flask, GitHub, GitHub Actions, InfluxDB, Grafana, and Argo CD.</li>
-          <li>Presented progress during sprint reviews and contributed actively to PI planning, sprint retrospectives, and team knowledge-sharing sessions.</li>
-        </ul>
-      </div>
-
-      <div className="job-entry">
-        <h3>Senior Receptionist</h3>
-        <p><strong>Absolute Hotel, Limerick</strong> — 2019 – December 2024</p>
-        <ul>
-          <li>Advanced user of Opera Hotel Management System and Micros POS.</li>
-          <li>Actively contributed to HOD (Head of Department) meetings, offering insights to improve operational workflows.</li>
-          <li>Responsible for onboarding and training new team members, mentoring junior staff and ensuring high service standards.</li>
-          <li>Managed group and individual reservations across leisure, corporate, and event categories, maintaining booking accuracy and customer satisfaction.</li>
-          <li>Cross Checking Commisions against 3rd Party booking engines</li>
-          <li>Carried out Duty Manager responsibilities including supervision of bar, restaurant, meetings, and events (C&B).</li>
-        </ul>
-      </div>
-
-      <div className="job-entry">
-        <h3>Night Duty Manager</h3>
-        <p><strong>Absolute Hotel, Limerick</strong> — 2018 – 2019</p>
-        <ul>
-          <li>Oversaw night-time operations of the hotel, ensuring safety, guest support, and operational continuity.</li>
-          <li>Managed front desk tasks, handled escalated guest concerns, and coordinated with security and housekeeping teams.</li>
-          <li>Cash/Debit/Credit Card Handling, Counting of the Safe, Staff Training.</li>
-          <li>Meeting & Events - Room Set-up</li>
-          <li>Bar Responsibilities</li>
-          <li>Running of Night Audit/End of Day & Night Reports</li>
-        </ul>
-      </div>
-
-      <div className="job-entry">
-        <h3>Receptionist (Part-Time)</h3>
-        <p><strong>Absolute Hotel, Limerick</strong> — September 2017 – 2018</p>
-        <ul>
-          <li>Provided front desk services, processed guest check-ins and check-outs, and maintained reservation logs.</li>
-          <li>Built foundational skills in hospitality, multitasking, and customer interaction.</li>
-          <li>Cash/Debit/Credit Card Handling</li>
-        </ul>
-      </div>
-
-      <div className="job-entry">
-        <h3>Receptionist (Part-Time)</h3>
-        <p><strong>Radisson Blu Hotel & Spa, Limerick</strong> — February 2017 – September 2017</p>
-        <ul>
-          <li>Provided front desk services, processed guest check-ins and check-outs, and maintained reservation logs.</li>
-          <li>Built foundational skills in hospitality, multitasking, and customer interaction.</li>
-          <li>Cash/Debit/Credit Card Handling</li>
-        </ul>
+      <div className="jobs-timeline">
+        {jobs.map(({ title, company, dates, bullets }) => (
+          <div className="job-entry" key={`${company}-${title}`}>
+            <h3>{title}</h3>
+            <div className="job-meta">
+              <span className="job-company">{company}</span>
+              <span className="job-dates">{dates}</span>
+            </div>
+            <ul>
+              {bullets.map((b, i) => <li key={i}>{b}</li>)}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );

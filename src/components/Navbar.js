@@ -1,32 +1,30 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../css/NavBar.css';
 import { useState } from 'react';
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen((prev) => !prev);
-  };
+  const close = () => setMobileMenuOpen(false);
 
   return (
     <nav className={`navbar ${mobileMenuOpen ? 'active' : ''}`}>
       <div className="navbar-inner">
-      <Link to="/" onClick={() => setMobileMenuOpen(false)}>
-        <img
-          src="/Images/SS - Company Image.png"
-          alt="Logo"
-          className="navbar-logo"
-        />
-      </Link>
+        <NavLink to="/" onClick={close}>
+          <img
+            src="/Images/SS - Company Image.png"
+            alt="Logo"
+            className="navbar-logo"
+          />
+        </NavLink>
 
         <div
           className="hamburger"
-          onClick={toggleMobileMenu}
+          onClick={() => setMobileMenuOpen(prev => !prev)}
           aria-label="Toggle menu"
           role="button"
           tabIndex={0}
-          onKeyPress={toggleMobileMenu}
+          onKeyPress={() => setMobileMenuOpen(prev => !prev)}
         >
           <span></span>
           <span></span>
@@ -34,10 +32,10 @@ function Navbar() {
         </div>
 
         <div className="nav-links">
-          <Link to="/" onClick={() => setMobileMenuOpen(false)}>Home</Link>
-          <Link to="/about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-          <Link to="/projects" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
-          <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+          <NavLink to="/" end onClick={close}>Home</NavLink>
+          <NavLink to="/about" onClick={close}>About</NavLink>
+          <NavLink to="/projects" onClick={close}>Projects</NavLink>
+          <NavLink to="/contact" onClick={close}>Contact</NavLink>
         </div>
       </div>
     </nav>

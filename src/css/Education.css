@@ -1,188 +1,198 @@
-.about-section {
-  background-color: #f9f9f9;
-  margin: 0 auto;
-  max-width: 1400px;
-  padding: 3rem 2rem;
-}
-
-.about-heading {
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 3rem;
-  color: #333;
-}
-
-.about-paragraph {
-  font-size: 24px;
-  line-height: 2;
-  color: #555;
-  margin-bottom: 2rem;
-}
-
 .education-section {
-  max-width: 1400px;
-  margin: 4rem auto 6rem auto;
-  padding: 0 2rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem 4rem;
 }
 
 .education-heading {
-  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
   text-align: center;
-  margin-bottom: 3rem;
-  color: #222;
+  margin-bottom: 2.75rem;
+  background: var(--cl-gradient-title, linear-gradient(135deg, #0a0a0a, #374151));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .education-entries-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1.75rem;
   justify-content: center;
+}
+
+/* ---- Cards ---- */
+.education-entry {
+  background: var(--cl-bg, #ffffff);
+  border-radius: var(--cl-radius, 16px);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  box-shadow: var(--cl-shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-entry::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--cl-gradient-accent, linear-gradient(90deg, #0077cc, #6366f1));
+}
+
+.education-entry:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--cl-shadow-lg, 0 12px 32px rgba(0,0,0,0.10));
 }
 
 .education-entry.tus-entry {
   flex: 1 1 100%;
   max-width: 100%;
-  background-color: #fff;
-  padding: 3.5rem 3.5rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 3rem;
-}
-
-.education-entry.tus-entry:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem 2.5rem;
 }
 
 .education-entry.small-entry {
-  flex: 1 1 360px;
-  max-width: 460px;
-  background-color: #fff;
-  padding: 3rem 3rem;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.education-entry.small-entry:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.15);
+  flex: 1 1 340px;
+  max-width: 440px;
+  padding: 2rem 2rem;
 }
 
 .education-entry h3 {
-  font-size: 26px;
-  margin-bottom: 12px;
-  color: #222;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--cl-text, #111827);
+  line-height: 1.4;
 }
 
+/* ---- Year sections ---- */
 .education-year {
-  margin-top: 15px;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--cl-border-light, #f3f4f6);
 }
 
 .education-year h4 {
-  font-size: 22px;
-  font-weight: 600;
-  color: #444;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--cl-text-2, #374151);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
 }
 
 .education-section p,
 .education-entry p {
-  font-size: 20px;
-  line-height: 1.6;
-  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--cl-muted, #6b7280);
+  margin-bottom: 0.5rem;
+}
+
+.education-entry p strong {
+  color: var(--cl-text-2, #374151);
 }
 
 .education-dates {
   font-weight: 400;
-  font-size: 20px;
-  color: #666;
-  margin-left: 10px;
+  font-size: 0.85rem;
+  color: var(--cl-muted, #6b7280);
+  margin-left: 6px;
 }
 
 .gpa {
-  color: #007BFF;
-  font-weight: 600;
-  font-size: 20px;
-  margin-left: 8px;
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  background: var(--cl-primary-bg, #eff6ff);
+  color: var(--cl-primary, #0077cc);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 .course-info p {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
 }
 
+/* ---- Module pill tags ---- */
+.module-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.module-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.22rem 0.6rem;
+  border-radius: 6px;
+  background: var(--cl-border-light, #f3f4f6);
+  color: var(--cl-text-2, #374151);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  white-space: nowrap;
+}
+
+.module-grade {
+  font-weight: 700;
+  color: var(--cl-primary, #0077cc);
+  font-size: 0.68rem;
+}
+
+/* ================================================
+   Responsive
+   ================================================ */
 @media (max-width: 768px) {
-  .about-heading,
-  .education-heading {
-    font-size: 32px;
+  .education-section {
+    padding: 0 1rem 3rem;
+    margin: 2rem auto;
   }
 
-  .about-paragraph {
-    font-size: 20px;
-    line-height: 1.8;
+  .education-heading {
+    font-size: 2rem;
+    margin-bottom: 2rem;
   }
 
   .education-entry.tus-entry,
   .education-entry.small-entry {
-    padding: 2.5rem 2rem;
+    padding: 1.75rem 1.5rem;
   }
 
   .education-entry h3 {
-    font-size: 22px;
-  }
-
-  .education-year h4 {
-    font-size: 20px;
-  }
-
-  .education-section p,
-  .education-entry p,
-  .education-dates,
-  .gpa {
-    font-size: 18px;
+    font-size: 1.05rem;
   }
 }
 
 @media (max-width: 480px) {
-  .about-section,
-  .education-section {
-    padding: 2rem 1rem;
-  }
-
-  .about-heading,
-  .education-heading {
-    font-size: 26px;
-    margin-bottom: 2rem;
-  }
-
-  .about-paragraph {
-    font-size: 18px;
-    line-height: 1.7;
-  }
-
   .education-entries-container {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.25rem;
+  }
+
+  .education-entry.small-entry {
+    max-width: 100%;
+    flex-basis: auto;
+  }
+
+  .education-heading {
+    font-size: 1.75rem;
   }
 
   .education-entry.tus-entry,
   .education-entry.small-entry {
-    padding: 2rem 1.5rem;
-  }
-
-  .education-entry h3 {
-    font-size: 20px;
+    padding: 1.5rem 1.25rem;
   }
 
   .education-year h4 {
-    font-size: 18px;
-  }
-
-  .education-section p,
-  .education-entry p,
-  .education-dates,
-  .gpa {
-    font-size: 16px;
+    font-size: 0.95rem;
   }
 }

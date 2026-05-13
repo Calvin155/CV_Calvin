@@ -1,59 +1,168 @@
 .technical-section {
   max-width: 1000px;
-  margin: 60px auto;
-  padding: 40px 30px;
-  background-color: #f9fafc;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin: 3rem auto;
+  padding: 2.5rem 2rem;
+  background: var(--cl-bg, #ffffff);
+  border-radius: var(--cl-radius, 16px);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  box-shadow: var(--cl-shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
 }
 
 .technical-heading {
-  font-size: 32px;
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -1px;
   text-align: center;
-  color: #1a1a1a;
-  margin-bottom: 30px;
-  font-weight: 700;
+  margin-bottom: 2.5rem;
+  background: var(--cl-gradient-title, linear-gradient(135deg, #0a0a0a, #374151));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.skills-grid {
+.skills-content {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2rem;
 }
 
-.skills-grid h3 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 12px;
+/* ---- Block (Technical / Personal) ---- */
+.skills-block {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--cl-border-light, #f3f4f6);
+}
+
+.skills-block:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.skills-block-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cl-text, #111827);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.skills-block-title::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 1.1em;
+  background: var(--cl-gradient-accent, linear-gradient(to bottom, #0077cc, #6366f1));
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+/* ---- Skill groups (category row) ---- */
+.skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.skill-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.skill-category {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--cl-muted, #6b7280);
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  min-width: 160px;
+  padding-top: 0.3rem;
+  flex-shrink: 0;
+}
+
+/* ---- Tag pills ---- */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.skill-tag {
+  font-size: 0.75rem;
   font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  background: var(--cl-border-light, #f3f4f6);
+  color: var(--cl-text-2, #374151);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  white-space: nowrap;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 
-.skills-grid ul {
-  list-style-type: disc;
-  padding-left: 22px;
-  font-size: 16px;
-  color: #444;
-  line-height: 1.5;
+.skill-tag:hover {
+  background: var(--cl-primary-bg, #eff6ff);
+  color: var(--cl-primary, #0077cc);
+  border-color: var(--cl-primary-border, #bfdbfe);
 }
 
-.skills-grid li {
-  margin-bottom: 12px;
+.skill-tag-personal {
+  background: var(--cl-primary-bg, #eff6ff);
+  color: var(--cl-primary-dark, #005fa3);
+  border-color: var(--cl-primary-border, #bfdbfe);
 }
 
-@media (max-width: 600px) {
+/* ---- Cert badge ---- */
+.certifications-note {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.cert-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.4rem;
+  background: var(--cl-gradient-accent, linear-gradient(90deg, #0077cc, #6366f1));
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(0, 119, 204, 0.3);
+}
+
+/* ================================================
+   Responsive
+   ================================================ */
+@media (max-width: 768px) {
   .technical-section {
-    padding: 30px 20px;
+    margin: 1.5rem 1rem;
+    padding: 1.75rem 1.25rem;
   }
-  
+
   .technical-heading {
-    font-size: 28px;
+    font-size: 1.85rem;
   }
-  
-  .skills-grid h3 {
-    font-size: 20px;
+
+  .skill-group {
+    flex-direction: column;
+    gap: 0.4rem;
   }
-  
-  .skills-grid ul {
-    font-size: 14px;
+
+  .skill-category {
+    min-width: unset;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .technical-section {
+    margin: 1rem;
+    padding: 1.25rem 1rem;
+  }
+
+  .technical-heading {
+    font-size: 1.6rem;
   }
 }

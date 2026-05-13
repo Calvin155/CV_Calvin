@@ -1,51 +1,88 @@
+/* ================================================
+   About Hub (About.js — card grid)
+   ================================================ */
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 1.5rem 4rem;
 }
 
 .about-title {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  margin-bottom: 0.65rem;
+  text-align: center;
+  background: var(--cl-gradient-title, linear-gradient(135deg, #0a0a0a, #374151));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .about-subtitle {
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 2rem;
+  font-size: 1.05rem;
+  color: var(--cl-muted, #6b7280);
+  margin-bottom: 3rem;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .about-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding-top: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.75rem;
 }
 
 .about-card {
-  background: #fff;
-  border-radius: 16px;
+  background: var(--cl-bg, #ffffff);
+  border-radius: var(--cl-radius, 16px);
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--cl-border, #e5e7eb);
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   display: flex;
   flex-direction: column;
+  position: relative;
+  box-shadow: var(--cl-shadow-sm, 0 1px 3px rgba(0,0,0,0.06));
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--cl-gradient-accent, linear-gradient(90deg, #0077cc, #6366f1));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  z-index: 1;
 }
 
 .about-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10), 0 4px 8px rgba(0,0,0,0.05);
+  border-color: var(--cl-light, #9ca3af);
+}
+
+.about-card:hover::before {
+  opacity: 1;
 }
 
 .about-card-image {
   width: 100%;
-  height: 160px;
+  height: 175px;
   object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.about-card:hover .about-card-image {
+  transform: scale(1.04);
 }
 
 .about-card-content {
-  padding: 1.2rem;
+  padding: 1.4rem 1.5rem 1.5rem;
   text-align: left;
   flex-grow: 1;
   display: flex;
@@ -55,83 +92,161 @@
 
 .about-label {
   margin: 0 0 0.5rem;
-  font-size: 1.25rem;
-  color: #333;
-  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--cl-text, #111827);
+  font-weight: 700;
+  letter-spacing: -0.1px;
 }
 
 .about-card-content p {
-  font-size: 0.95rem;
-  color: #555;
+  font-size: 0.875rem;
+  color: var(--cl-muted, #6b7280);
   flex-grow: 1;
+  line-height: 1.6;
+  margin: 0 0 1.1rem;
 }
 
-.details-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  border: none;
-  background: #007bff;
-  color: white;
-  border-radius: 8px;
-  font-size: 0.9rem;
+.about-card-content .details-button {
+  padding: 0.52rem 1.2rem;
+  border: 1.5px solid var(--cl-primary, #0077cc);
+  background: transparent;
+  color: var(--cl-primary, #0077cc);
+  border-radius: var(--cl-radius-sm, 8px);
+  font-size: 0.85rem;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
   align-self: flex-start;
+  font-weight: 600;
+  letter-spacing: 0.2px;
 }
 
-.details-button:hover {
-  background: #0056b3;
+.about-card-content .details-button:hover {
+  background: var(--cl-primary, #0077cc);
+  color: #ffffff;
 }
 
+/* ---- Card icon + label row ---- */
+.about-label-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.about-icon {
+  display: flex;
+  align-items: center;
+  color: var(--cl-primary, #0077cc);
+  flex-shrink: 0;
+}
+
+/* ================================================
+   Whoami page (whoami.js uses .about-section)
+   ================================================ */
+
+/* ---- Key facts strip ---- */
+.whoami-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2.25rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--cl-bg-soft, #f8fafc);
+  border: 1px solid var(--cl-border, #e5e7eb);
+  border-radius: var(--cl-radius-md, 12px);
+}
+
+.whoami-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.whoami-fact-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+  color: var(--cl-muted, #6b7280);
+}
+
+.whoami-fact-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--cl-text, #111827);
+}
+
+.about-section {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  background: var(--cl-gradient-title, linear-gradient(135deg, #0a0a0a, #374151));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-paragraph {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--cl-muted, #6b7280);
+  margin-bottom: 1.5rem;
+}
+
+.about-paragraph strong {
+  color: var(--cl-text, #111827);
+}
+
+/* ================================================
+   Responsive
+   ================================================ */
 @media (max-width: 768px) {
   .about-container {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 3rem;
   }
 
   .about-title {
+    font-size: 2.25rem;
+    letter-spacing: -1px;
+  }
+
+  .about-card-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .about-card-image {
+    height: 155px;
+  }
+
+  .about-section {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .about-heading {
     font-size: 2rem;
   }
 
-  .about-subtitle {
-    font-size: 1rem;
-  }
-
-  .about-card-content {
-    padding: 1rem;
-  }
-
-  .about-label {
-    font-size: 1.1rem;
-  }
-
-  .details-button {
-    font-size: 0.85rem;
+  .about-paragraph {
+    font-size: 0.95rem;
   }
 }
 
 @media (max-width: 480px) {
-  .about-container {
-    padding: 1rem 0.75rem;
-  }
-
   .about-title {
+    font-size: 2rem;
+  }
+
+  .about-heading {
     font-size: 1.75rem;
-  }
-
-  .about-subtitle {
-    font-size: 0.95rem;
-  }
-
-  .about-card-image {
-    height: 140px;
-  }
-
-  .about-card-content p {
-    font-size: 0.9rem;
-  }
-
-  .details-button {
-    width: 100%;
-    text-align: center;
+    margin-bottom: 1.75rem;
   }
 }
