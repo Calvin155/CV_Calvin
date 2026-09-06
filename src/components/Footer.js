@@ -27,12 +27,12 @@ function Footer() {
             <Send size={18} /> Contact Me
           </a>
 
-          {/* <a href="/Images/CV/Calvin Lynch CV.pdf" className="btn" target="_blank" rel="noopener noreferrer">
+          { <a href="/Images/CV/CL - CV - 2026-09.pdf" className="btn" target="_blank" rel="noopener noreferrer">
             <FileText size={18} /> Download CV
-          </a> */}
+          </a> }
         </div>
 
-        <p className="updated-note">Last updated May 2026</p>
+        <p className="updated-note">Last updated September 2026</p>
       </div>
     </footer>
   );
